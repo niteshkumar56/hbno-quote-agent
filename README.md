@@ -17,46 +17,75 @@ The model (Claude) only reads the email. Matching, pricing, credit, stock, dates
 
 ## Run it from scratch
 
-Requires Python 3.10 or newer.
+You need Python 3.10 or newer (`python --version`) and an Anthropic API key.
+
+### 1. Get the code
+
+Either clone it:
 
 ```bash
+git clone https://github.com/niteshkumar56/hbno-quote-agent.git
 cd hbno-quote-agent
-python -m venv .venv
-# Windows:      .venv\Scripts\activate
-# macOS/Linux:  source .venv/bin/activate
-pip install -r requirements.txt
-
-cp .env.example .env          # Windows: copy .env.example .env
-# edit .env and set ANTHROPIC_API_KEY=...
 ```
 
-Process the sample emails:
+Or use **Code → Download ZIP** on GitHub and unzip it. The folder is called `hbno-quote-agent-main`, and Windows' "Extract All" often nests it as `hbno-quote-agent-main\hbno-quote-agent-main`. Go into the folder that contains `run.py`. The folder name doesn't matter to the agent.
+
+### 2. Install
+
+Windows (Command Prompt):
+
+```bat
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+copy .env.example .env
+notepad .env
+```
+
+macOS / Linux (bash or zsh). In Git Bash on Windows, use `python` instead of `python3` and `source .venv/Scripts/activate` instead:
 
 ```bash
-python run.py data/sample_emails.json
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env
+nano .env
 ```
 
-Process **any new file** in the same format (a JSON array of `{id, sender, to, subject, date, body}`):
+In `.env`, replace `your-key-here` with your Anthropic API key and save. `.env` is git-ignored.
+
+### 3. Run
+
+Process **any new file** in the same format as `data/sample_emails.json` (a JSON array of `{id, sender, to, subject, date, body}`):
 
 ```bash
 python run.py path/to/new_emails.json --out out_new
 ```
 
-Drafts are dated the day they are created and are valid for 5 business days from then. To reproduce a run exactly, fix the date with `--as-of 2026-11-10`.
-
-Score against the hand-labelled answers (sample emails only):
+Re-run the 30 samples and score them. Use a new output folder: `out/` holds the submitted results.
 
 ```bash
-python eval/score.py --out out
+python run.py data/sample_emails.json --out out_rerun --db out_rerun/quotes.db
+python eval/score.py --out out_rerun
 ```
+
+Each email prints one line as it's processed, then a summary with the cost. Drafts are dated the day they are created and are valid for 5 business days from then. To reproduce a run exactly, fix the date with `--as-of 2026-11-11`. Processing the same email again is skipped at no cost, so to start over, delete the output folder and its `.db` file.
 
 ### No API key? Test the pipeline offline
 
+After step 2 (the key can stay unset):
+
 ```bash
-python -m unittest discover -s tests -t .                                   # 55 guardrail tests
+python -m unittest discover -s tests -t .
 python run.py data/sample_emails.json --extractor fixture --out out_fixture --db out_fixture/test.db
 python eval/score.py --out out_fixture
 ```
+
+### If something goes wrong
+
+- **`'python' is not recognized`**: install Python from python.org and tick "Add python.exe to PATH". On macOS/Linux use `python3`.
+- **`No API key`**: `.env` is missing, or still says `your-key-here`.
+- **`database is locked`**: the folder is inside OneDrive, Dropbox or another synced folder. Move it to an unsynced folder such as `C:\dev`.
 
 `--extractor fixture` replaces the model with **hand-written** extractions (`tests/fixture_extractions.py`). It tests everything after extraction: matching, pricing, flags, the store and the cover emails. It is not model output, and it can't process new emails.
 
