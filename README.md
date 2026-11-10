@@ -11,6 +11,7 @@ The model (Claude) only reads the email. Matching, pricing, credit, stock, dates
 | Source code and run instructions | This repo; this README |
 | Draft quotes for the 30 samples, plus triage output for the 3 that aren't quote requests | [`out/`](out/): `<id>.json` (full record) and `<id>_cover_email.txt` (rep notes and draft email) for each email. Live run with Claude Sonnet 5.5 on 11 Nov 2026. |
 | How it works and the choices made | [`docs/WRITEUP.md`](docs/WRITEUP.md) |
+| Architecture diagrams | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) |
 | One-page report: accuracy, cost per email, guardrails, NetSuite plan, tools and hours | [`docs/REPORT.md`](docs/REPORT.md) |
 | Guardrail design in detail | [`docs/GUARDRAILS.md`](docs/GUARDRAILS.md) |
 

@@ -1,6 +1,6 @@
 # How the agent works, and why it's built this way
 
-The agent makes one model call per email. Everything that touches money, stock, credit or the quote record is ordinary Python. I chose this design because a wrong price or a guessed product costs HBNO far more than a rep spending thirty seconds on a flagged line. Code is testable and repeatable, and the model is neither.
+The agent makes one model call per email. Everything that touches money, stock, credit or the quote record is ordinary Python. I chose this design because a wrong price or a guessed product costs HBNO far more than a rep spending thirty seconds on a flagged line. Code is testable and repeatable, and the model is neither. [ARCHITECTURE.md](ARCHITECTURE.md) has the flow as diagrams.
 
 ## One email, start to finish
 
