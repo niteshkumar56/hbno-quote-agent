@@ -1,0 +1,14 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.db
+*.db-wal
+*.db-shm
+out_fixture/
+out_*/
+
+# Local working files, not part of the submission
+CLAUDE.md
+docs/TASK_BRIEF.md

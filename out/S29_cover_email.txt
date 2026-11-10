@@ -1,0 +1,33 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00026 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Bloom & Bath Co (C1001)
+Summary: Customer requests a quote for two 5 gal containers of Bulgarian lavender essential oil; no ship-to or needed-by date given.
+  [WARNING] STOCK_INSUFFICIENT: line 1: requested 2, available 1
+  [INFO   ] other open draft for this customer: DQ-2026-00001 ($2,394.00)
+  [INFO   ] other open draft for this customer: DQ-2026-00010 ($0.00)
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: anna@bloombath.example
+Subject: HBNO quote DQ-2026-00026 - Re: Bulgarian lavender 5 gal
+
+Hello Bloom & Bath Co team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+EO-LAVBG-5GAL Lavender Essential Oil Bulgar     2    $1,984.00    $3,968.00
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                $3,968.00
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 30.
+Availability: we currently have 1 of EO-LAVBG-5GAL in stock; we'll confirm lead time for the balance.
+
+Best regards,
+HBNO Sales

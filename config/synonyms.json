@@ -1,0 +1,17 @@
+{
+  "_comment": "Extra names the deterministic matcher accepts for a catalog product, on top of catalog.csv aliases (e.g. translations used by HBNO customers). Only add a term if it refers to exactly one product. Ambiguous words like 'eucalipto' or 'lavanda' must NOT be added.",
+  "synonyms": {
+    "Castor Oil": ["ricino", "aceite de ricino", "huile de ricin"],
+    "Grapeseed Oil": ["semilla de uva", "aceite de semilla de uva", "pepins de raisin"],
+    "Sweet Almond Oil": ["almendra dulce", "aceite de almendra dulce", "amande douce"],
+    "Fractionated Coconut Oil": ["coco fraccionado", "aceite de coco fraccionado"],
+    "Argan Oil": ["argán", "aceite de argan"],
+    "Jojoba Oil Golden": ["jojoba dorada"],
+    "Peppermint Essential Oil": ["menta piperita"],
+    "Tea Tree Essential Oil": ["árbol de té", "arbol de te"],
+    "Sweet Orange Essential Oil": ["naranja dulce"],
+    "Rosemary Essential Oil": ["romero"],
+    "Lemon Essential Oil": ["limón", "limon"],
+    "Clove Bud Essential Oil": ["clavo", "botón de clavo"]
+  }
+}

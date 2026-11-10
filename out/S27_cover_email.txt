@@ -1,0 +1,23 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: (triage, no quote) | Status: Triage - not a quote | Review: needs_rep_action
+Customer: Coastal Wellness (C1009)
+Route to: Customer service: order status
+Summary: Customer asks for the status of order SO-55120, which they say was due yesterday.
+  [BLOCKER] NOT_QUOTE_REQUEST: intent: order_status
+  [WARNING] COMPLAINT_OR_ISSUE: Customer says order SO-55120 was due yesterday and has not arrived.
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+SUGGESTED ACKNOWLEDGEMENT (edit before sending)
+========================================================================
+To: kevin@coastalwellness.example
+Subject: Re: Order status
+
+Hello,
+
+Thank you for your message. We've passed it to the right person on our team and will get back to you shortly.
+
+Best regards,
+HBNO Sales

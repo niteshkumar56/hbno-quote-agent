@@ -1,0 +1,36 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00020 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Lumen Labs Skincare (C1011)
+Summary: Customer requests 5 x 1 gal Frankincense Serrata essential oil needed by Nov 15; no ship-to stated.
+  [WARNING] STOCK_INSUFFICIENT: line 1: requested 5, available 2
+  [INFO   ] NEEDED_BY_NON_BUSINESS_DAY: 2026-11-15 is a Sunday
+  [INFO   ] other open draft for this customer: DQ-2026-00004 ($0.00)
+  [INFO   ] other open draft for this customer: DQ-2026-00011 ($0.00)
+  [INFO   ] other open draft for this customer: DQ-2026-00017 ($848.40)
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: buyer@lumenlabs.example
+Subject: HBNO quote DQ-2026-00020 - Re: Frankincense serrata
+
+Hello Lumen Labs Skincare team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+EO-FRS-1GAL Frankincense Serrata Essential      5      $385.70    $1,928.50
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                $1,928.50
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 30.
+Availability: we currently have 2 of EO-FRS-1GAL in stock; we'll confirm lead time for the balance.
+We've noted your need-by date of Nov 15, 2026.
+
+Best regards,
+HBNO Sales

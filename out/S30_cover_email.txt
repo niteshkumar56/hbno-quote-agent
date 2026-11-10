@@ -1,0 +1,28 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00027 | Status: Draft - pending rep approval | Review: needs_rep_action
+Customer: Kalamata Naturals (C1005)
+Summary: Customer wants 3 x 1 gallon of eucalyptus (species not specified) and notes they prepay as usual; no ship-to or date given.
+  [BLOCKER] SKU_AMBIGUOUS: line 1: 'eucalyptus' could be: Eucalyptus Globulus Essential Oil, Eucalyptus Radiata Essential Oil
+  [WARNING] CLARIFICATION_NEEDED: Eucalyptus species not specified: could be Globulus or Radiata.
+  [WARNING] DISCOUNT_REQUEST: Customer says 'We prepay as usual' - refers to payment terms/prior arrangement; rep to verify.
+  [INFO   ] PREPAID_TERMS: prepaid account: no credit check; payment required before release
+  [INFO   ] other open draft for this customer: DQ-2026-00009 ($4,050.00)
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: ops@kalamatanaturals.example
+Subject: HBNO quote DQ-2026-00027 - Re: Eucalyptus
+
+Hello Kalamata Naturals team,
+
+Thank you for your request. Before we can price your request we need a few details.
+
+A few questions so we can complete your quote:
+  1. For "eucalyptus", which product did you mean: Eucalyptus Globulus Essential Oil or Eucalyptus Radiata Essential Oil?
+
+Best regards,
+HBNO Sales

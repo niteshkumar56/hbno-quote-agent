@@ -1,0 +1,17 @@
+{
+  "emails": 30,
+  "created": 30,
+  "duplicates_skipped": 0,
+  "failed": 0,
+  "invalid_input": 0,
+  "quotes": 27,
+  "triage": 3,
+  "tokens": {
+    "input_tokens": 9208,
+    "output_tokens": 18651,
+    "cache_read_input_tokens": 265205,
+    "cache_creation_input_tokens": 9145
+  },
+  "cost_usd": 0.2808,
+  "cost_per_email_usd": 0.0094
+}

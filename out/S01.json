@@ -1,0 +1,161 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00001",
+  "status": "Draft - pending rep approval",
+  "review_state": "ready_for_review",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S01",
+    "sender": "anna@bloombath.example",
+    "subject": "Quote request - lavender",
+    "received_at": "2026-11-02 08:12"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1001",
+    "company": "Bloom & Bath Co",
+    "email_domain": "bloombath.example",
+    "terms": "Net 30",
+    "contact_email": "anna@bloombath.example"
+  },
+  "received_date": "2026-11-02",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "10 x 1 gallon Lavender 40/42",
+      "product_text": "Lavender 40/42",
+      "product": "Lavender Essential Oil 40/42",
+      "pack_size": "1 gal",
+      "pack_size_text": "1 gallon",
+      "quantity": 10,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "EO-LAV4042-1GAL",
+      "unit_price": 239.4,
+      "amount": 2394.0,
+      "match_confidence": 0.98,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-LAV4042-1GAL"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Lavender Essential Oil 40/42"
+      ],
+      "item_name": "Lavender Essential Oil 40/42 1 gal",
+      "price_tier_min_qty": 10,
+      "available_qty": 25
+    }
+  ],
+  "order_total": 2394.0,
+  "flags": [],
+  "summary_for_rep": "Customer requests a quote for 10 x 1 gallon Lavender 40/42; no ship-to or needed-by date given.",
+  "referenced_documents": [],
+  "idempotency_key": "6fc9d8426fe80a93c74a6b16288799d7845bf39fef248dd5e3576eca0e9c53dd",
+  "rep_context": {
+    "other_open_drafts": []
+  },
+  "netsuite_estimate": {
+    "externalId": "6fc9d8426fe80a93c74a6b16288799d7845bf39fef248dd5e3576eca0e9c53dd",
+    "entity": {
+      "externalId": "C1001"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S01: Quote request - lavender",
+    "custbody_ai_review_state": "ready_for_review",
+    "custbody_ai_flags": [],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "EO-LAV4042-1GAL"
+          },
+          "quantity": 10,
+          "rate": 239.4,
+          "amount": 2394.0,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00001"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:21:32+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 324,
+      "output_tokens": 511,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 9145
+    },
+    "cost_usd": 0.028621,
+    "redactions_before_model": {
+      "name": 1,
+      "phone": 1
+    },
+    "sent_to_model": {
+      "subject": "Quote request - lavender",
+      "body": "Hi team,\nCould you quote 10 x 1 gallon Lavender 40/42?\nThanks,\n[NAME] | Purchasing | Bloom & Bath Co | [PHONE]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.98,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "10 x 1 gallon Lavender 40/42",
+          "product_text": "Lavender 40/42",
+          "catalog_product": "Lavender Essential Oil 40/42",
+          "catalog_candidates": [],
+          "product_confidence": 0.98,
+          "quantity": 10,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "1 gal",
+          "pack_size_text": "1 gallon",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [],
+      "summary_for_rep": "Customer requests a quote for 10 x 1 gallon Lavender 40/42; no ship-to or needed-by date given."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+customer_id,company,email_domain,credit_limit_usd,open_balance_usd,credit_hold,terms
+C1001,Bloom & Bath Co,bloombath.example,50000,12000,N,Net 30
+C1002,Pure Leaf Soaps,pureleafsoaps.example,20000,18500,N,Net 30
+C1003,Northwind Candle Works,northwindcandle.example,30000,5000,N,Net 30
+C1004,Serenity Spa Supply,serenityspa.example,10000,11200,Y,Net 30
+C1005,Kalamata Naturals,kalamatanaturals.example,0,0,N,Prepaid
+C1006,Green Valley Apothecary,greenvalleyapothecary.example,25000,3000,N,Net 30
+C1007,Sunrise Cosmetics Lab,sunrisecoslab.example,75000,40000,N,Net 45
+C1008,Maple Ridge Goods,mapleridgegoods.example,15000,0,N,Net 30
+C1009,Coastal Wellness,coastalwellness.example,40000,39000,N,Net 30
+C1010,Herb & Hearth,herbhearth.example,8000,2000,Y,Net 15
+C1011,Lumen Labs Skincare,lumenlabs.example,60000,10000,N,Net 30
+C1012,Tierra Botanica,tierrabotanica.example,20000,4000,N,Net 30

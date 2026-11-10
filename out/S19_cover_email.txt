@@ -1,0 +1,33 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00018 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Coastal Wellness (C1009)
+Summary: Customer requests a quote for 24 x 16 oz tea tree and 24 x 16 oz peppermint essential oil; no ship-to or needed-by date given.
+  [WARNING] CREDIT_LIMIT_EXCEEDED: open balance 39000.00 + this quote 1382.40 = 40382.40 > limit 40000.00 (over by 382.40)
+  [INFO   ] TIER_BREAK_OPPORTUNITY: line 1: 25 units at 25.50 = 637.50 (vs 24 at 27.00 = 648.00); quantity not changed
+  [INFO   ] TIER_BREAK_OPPORTUNITY: line 2: 25 units at 28.90 = 722.50 (vs 24 at 30.60 = 734.40); quantity not changed
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: kevin@coastalwellness.example
+Subject: HBNO quote DQ-2026-00018 - Re: Tea tree and peppermint
+
+Hello Coastal Wellness team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+EO-TEA-16OZ Tea Tree Essential Oil 16 oz       24       $27.00      $648.00
+EO-PEP-16OZ Peppermint Essential Oil 16 oz     24       $30.60      $734.40
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                $1,382.40
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 30.
+
+Best regards,
+HBNO Sales

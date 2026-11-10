@@ -1,0 +1,33 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00002 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Northwind Candle Works (C1003)
+Summary: Customer requests a quote for peppermint, eucalyptus globulus and sweet orange essential oils for a Q1 candle run, shipping to their Portland, OR warehouse by Dec 1.
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: orders@northwindcandle.example
+Subject: HBNO quote DQ-2026-00002 - Re: RFQ - fragrance oils for Q1
+
+Hello Northwind Candle Works team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+EO-PEP-5GAL Peppermint Essential Oil 5 gal      2    $1,088.00    $2,176.00
+EO-EUCG-1GAL Eucalyptus Globulus Essential      4      $154.00      $616.00
+EO-ORA-5GAL Sweet Orange Essential Oil 5 ga     3      $384.00    $1,152.00
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                $3,944.00
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 30.
+We've noted your need-by date of Dec 01, 2026.
+Ship to: our Portland, OR warehouse.
+
+Best regards,
+HBNO Sales

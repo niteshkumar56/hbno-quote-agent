@@ -1,0 +1,30 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00014 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Green Valley Apothecary (C1006)
+Summary: Customer requests a quote for a dozen 4 oz containers of rosemary essential oil; no ship-to or needed-by date given.
+  [INFO   ] other open draft for this customer: DQ-2026-00003 ($0.00)
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: maria@greenvalleyapothecary.example
+Subject: HBNO quote DQ-2026-00014 - Re: rosemary
+
+Hello Green Valley Apothecary team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+EO-ROS-4OZ Rosemary Essential Oil 4 oz         12        $8.06       $96.72
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                   $96.72
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 30.
+
+Best regards,
+HBNO Sales

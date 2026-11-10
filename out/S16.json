@@ -1,0 +1,229 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00015",
+  "status": "Draft - pending rep approval",
+  "review_state": "ready_for_review",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S16",
+    "sender": "sam@pureleafsoaps.example",
+    "subject": "Big soap run",
+    "received_at": "2026-11-03 13:20"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1002",
+    "company": "Pure Leaf Soaps",
+    "email_domain": "pureleafsoaps.example",
+    "terms": "Net 30",
+    "contact_email": "sam@pureleafsoaps.example"
+  },
+  "received_date": "2026-11-03",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "5 x 5 gal sweet orange",
+      "product_text": "sweet orange",
+      "product": "Sweet Orange Essential Oil",
+      "pack_size": "5 gal",
+      "pack_size_text": "5 gal",
+      "quantity": 5,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "EO-ORA-5GAL",
+      "unit_price": 364.8,
+      "amount": 1824.0,
+      "match_confidence": 0.97,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-ORA-5GAL"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Sweet Orange Essential Oil"
+      ],
+      "item_name": "Sweet Orange Essential Oil 5 gal",
+      "price_tier_min_qty": 5,
+      "available_qty": 8
+    },
+    {
+      "line_no": 2,
+      "line_ref": 2,
+      "request_text": "3 x 5 gal lavender 40/42",
+      "product_text": "lavender 40/42",
+      "product": "Lavender Essential Oil 40/42",
+      "pack_size": "5 gal",
+      "pack_size_text": "5 gal",
+      "quantity": 3,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "EO-LAV4042-5GAL",
+      "unit_price": 1216.0,
+      "amount": 3648.0,
+      "match_confidence": 0.98,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-LAV4042-5GAL"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Lavender Essential Oil 40/42"
+      ],
+      "item_name": "Lavender Essential Oil 40/42 5 gal",
+      "price_tier_min_qty": 1,
+      "available_qty": 8
+    }
+  ],
+  "order_total": 5472.0,
+  "flags": [
+    {
+      "code": "CREDIT_LIMIT_EXCEEDED",
+      "severity": "warning",
+      "detail": "open balance 18500.00 + this quote 5472.00 = 23972.00 > limit 20000.00 (over by 3972.00)",
+      "source": "code"
+    }
+  ],
+  "summary_for_rep": "Customer requests a quote for 5 x 5 gal sweet orange and 3 x 5 gal lavender 40/42 for a soap run; no ship-to or date given.",
+  "referenced_documents": [],
+  "idempotency_key": "04aa9a907a165c46342028366d9879483014337434586a593839ca44300ee767",
+  "rep_context": {
+    "other_open_drafts": [
+      [
+        "DQ-2026-00008",
+        "1638.00"
+      ]
+    ]
+  },
+  "netsuite_estimate": {
+    "externalId": "04aa9a907a165c46342028366d9879483014337434586a593839ca44300ee767",
+    "entity": {
+      "externalId": "C1002"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S16: Big soap run",
+    "custbody_ai_review_state": "ready_for_review",
+    "custbody_ai_flags": [
+      "CREDIT_LIMIT_EXCEEDED"
+    ],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "EO-ORA-5GAL"
+          },
+          "quantity": 5,
+          "rate": 364.8,
+          "amount": 1824.0,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        },
+        {
+          "item": {
+            "externalId": "EO-LAV4042-5GAL"
+          },
+          "quantity": 3,
+          "rate": 1216.0,
+          "amount": 3648.0,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00015"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:22:33+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 296,
+      "output_tokens": 676,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.009181,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "Big soap run",
+      "body": "Hi, please quote 5 x 5 gal sweet orange and 3 x 5 gal lavender 40/42. [NAME]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.97,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "5 x 5 gal sweet orange",
+          "product_text": "sweet orange",
+          "catalog_product": "Sweet Orange Essential Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.97,
+          "quantity": 5,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "5 gal",
+          "pack_size_text": "5 gal",
+          "is_sample": false,
+          "ship_to_text": null
+        },
+        {
+          "line_ref": 2,
+          "source_text": "3 x 5 gal lavender 40/42",
+          "product_text": "lavender 40/42",
+          "catalog_product": "Lavender Essential Oil 40/42",
+          "catalog_candidates": [],
+          "product_confidence": 0.98,
+          "quantity": 3,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "5 gal",
+          "pack_size_text": "5 gal",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [],
+      "summary_for_rep": "Customer requests a quote for 5 x 5 gal sweet orange and 3 x 5 gal lavender 40/42 for a soap run; no ship-to or date given."
+    }
+  }
+}

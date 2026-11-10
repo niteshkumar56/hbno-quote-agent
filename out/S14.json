@@ -1,0 +1,182 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00013",
+  "status": "Draft - pending rep approval",
+  "review_state": "ready_for_review",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S14",
+    "sender": "orders@northwindcandle.example",
+    "subject": "Clove for holiday run",
+    "received_at": "2026-11-03 11:15"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1003",
+    "company": "Northwind Candle Works",
+    "email_domain": "northwindcandle.example",
+    "terms": "Net 30",
+    "contact_email": "orders@northwindcandle.example"
+  },
+  "received_date": "2026-11-03",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": {
+    "text": "Portland OR",
+    "city": "Portland",
+    "region": "OR",
+    "country": null
+  },
+  "needed_by": {
+    "text": "November 20",
+    "date": "2026-11-20"
+  },
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "2 x 5 gal clove bud",
+      "product_text": "clove bud",
+      "product": "Clove Bud Essential Oil",
+      "pack_size": "5 gal",
+      "pack_size_text": "5 gal",
+      "quantity": 2,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "EO-CLO-5GAL",
+      "unit_price": 1024.0,
+      "amount": 2048.0,
+      "match_confidence": 0.98,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-CLO-5GAL"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Clove Bud Essential Oil"
+      ],
+      "item_name": "Clove Bud Essential Oil 5 gal",
+      "price_tier_min_qty": 1,
+      "available_qty": 3
+    }
+  ],
+  "order_total": 2048.0,
+  "flags": [],
+  "summary_for_rep": "Customer requests a quote for two 5 gal containers of clove bud essential oil, shipping to Portland, OR by November 20.",
+  "referenced_documents": [],
+  "idempotency_key": "b9b4bfeafa9e4d23f14ae50d2a28b7706965cc567d61607c1fcca932ade6b03b",
+  "rep_context": {
+    "other_open_drafts": [
+      [
+        "DQ-2026-00002",
+        "3944.00"
+      ]
+    ]
+  },
+  "netsuite_estimate": {
+    "externalId": "b9b4bfeafa9e4d23f14ae50d2a28b7706965cc567d61607c1fcca932ade6b03b",
+    "entity": {
+      "externalId": "C1003"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S14: Clove for holiday run",
+    "custbody_ai_review_state": "ready_for_review",
+    "custbody_ai_flags": [],
+    "custbody_needed_by": "2026-11-20",
+    "shipAddress": "Portland OR",
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "EO-CLO-5GAL"
+          },
+          "quantity": 2,
+          "rate": 1024.0,
+          "amount": 2048.0,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00013"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:22:25+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 302,
+      "output_tokens": 552,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.007953,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "Clove for holiday run",
+      "body": "Quote 2 x 5 gal clove bud, ship to Portland OR, needed by November 20. [NAME]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.97,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "2 x 5 gal clove bud",
+          "product_text": "clove bud",
+          "catalog_product": "Clove Bud Essential Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.98,
+          "quantity": 2,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "5 gal",
+          "pack_size_text": "5 gal",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": {
+        "text": "Portland OR",
+        "city": "Portland",
+        "region": "OR",
+        "country": null
+      },
+      "needed_by": {
+        "text": "November 20",
+        "date": "2026-11-20",
+        "is_vague": false
+      },
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [],
+      "summary_for_rep": "Customer requests a quote for two 5 gal containers of clove bud essential oil, shipping to Portland, OR by November 20."
+    }
+  }
+}

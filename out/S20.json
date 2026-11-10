@@ -1,0 +1,182 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00019",
+  "status": "Draft - pending rep approval",
+  "review_state": "ready_for_review",
+  "route_to": null,
+  "intent": "quote_change",
+  "source": {
+    "email_id": "S20",
+    "sender": "mike@mapleridgegoods.example",
+    "subject": "Re: Re: Quote Q-2210",
+    "received_at": "2026-11-04 09:00"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1008",
+    "company": "Maple Ridge Goods",
+    "email_domain": "mapleridgegoods.example",
+    "terms": "Net 30",
+    "contact_email": "mike@mapleridgegoods.example"
+  },
+  "received_date": "2026-11-04",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "4 x 1 gal grapeseed",
+      "product_text": "grapeseed",
+      "product": "Grapeseed Oil",
+      "pack_size": "1 gal",
+      "pack_size_text": "1 gal",
+      "quantity": 4,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "CO-GRP-1GAL",
+      "unit_price": 16.0,
+      "amount": 64.0,
+      "match_confidence": 0.97,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "CO-GRP-1GAL"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Grapeseed Oil"
+      ],
+      "item_name": "Grapeseed Oil 1 gal",
+      "price_tier_min_qty": 1,
+      "available_qty": 25
+    }
+  ],
+  "order_total": 64.0,
+  "flags": [
+    {
+      "code": "EXISTING_QUOTE_REFERENCE",
+      "severity": "warning",
+      "detail": "Customer asks to add 4 x 1 gal grapeseed to existing quote Q-2210 (originally for castor oil, per quoted history).",
+      "source": "llm"
+    }
+  ],
+  "summary_for_rep": "Customer asks to add 4 x 1 gal grapeseed oil to existing quote Q-2210.",
+  "referenced_documents": [
+    {
+      "type": "quote",
+      "ref": "Q-2210"
+    }
+  ],
+  "idempotency_key": "efccfc563a5a363f5264d9e147a2335598d46b013b88ccd326d960dbb0d133f0",
+  "rep_context": {
+    "other_open_drafts": []
+  },
+  "netsuite_estimate": {
+    "externalId": "efccfc563a5a363f5264d9e147a2335598d46b013b88ccd326d960dbb0d133f0",
+    "entity": {
+      "externalId": "C1008"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S20: Re: Re: Quote Q-2210",
+    "custbody_ai_review_state": "ready_for_review",
+    "custbody_ai_flags": [
+      "EXISTING_QUOTE_REFERENCE"
+    ],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "CO-GRP-1GAL"
+          },
+          "quantity": 4,
+          "rate": 16.0,
+          "amount": 64.0,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00019"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:22:48+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 332,
+      "output_tokens": 587,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.008363,
+    "redactions_before_model": {},
+    "sent_to_model": {
+      "subject": "Re: Re: Quote Q-2210",
+      "body": "Thanks for the quote. Can you also add 4 x 1 gal grapeseed?",
+      "quoted": "> On Oct 28, HBNO Sales wrote:\n> Hi Mike, here is your quote for 10 x 1 gal castor oil..."
+    },
+    "extraction": {
+      "intent": "quote_change",
+      "intent_confidence": 0.96,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "4 x 1 gal grapeseed",
+          "product_text": "grapeseed",
+          "catalog_product": "Grapeseed Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.97,
+          "quantity": 4,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "1 gal",
+          "pack_size_text": "1 gal",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [
+        {
+          "type": "quote",
+          "ref": "Q-2210"
+        }
+      ],
+      "rep_attention": [
+        {
+          "code": "REFERENCES_EXISTING_QUOTE",
+          "detail": "Customer asks to add 4 x 1 gal grapeseed to existing quote Q-2210 (originally for castor oil, per quoted history)."
+        }
+      ],
+      "summary_for_rep": "Customer asks to add 4 x 1 gal grapeseed oil to existing quote Q-2210."
+    }
+  }
+}

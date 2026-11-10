@@ -1,0 +1,30 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00019 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Maple Ridge Goods (C1008)
+Summary: Customer asks to add 4 x 1 gal grapeseed oil to existing quote Q-2210.
+  [WARNING] EXISTING_QUOTE_REFERENCE: Customer asks to add 4 x 1 gal grapeseed to existing quote Q-2210 (originally for castor oil, per quoted history).
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: mike@mapleridgegoods.example
+Subject: HBNO quote DQ-2026-00019 - Re: Re: Re: Quote Q-2210
+
+Hello Maple Ridge Goods team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+CO-GRP-1GAL Grapeseed Oil 1 gal                 4       $16.00       $64.00
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                   $64.00
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 30.
+
+Best regards,
+HBNO Sales

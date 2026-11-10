@@ -1,0 +1,287 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00007",
+  "status": "Draft - pending rep approval",
+  "review_state": "ready_for_review",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S07",
+    "sender": "purchasing@sunrisecoslab.example",
+    "subject": "PO draft attached - please quote",
+    "received_at": "2026-11-02 14:20"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1007",
+    "company": "Sunrise Cosmetics Lab",
+    "email_domain": "sunrisecoslab.example",
+    "terms": "Net 45",
+    "contact_email": "purchasing@sunrisecoslab.example"
+  },
+  "received_date": "2026-11-02",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "Fractionated Coconut Oil      | 55 gal | 2",
+      "product_text": "Fractionated Coconut Oil",
+      "product": "Fractionated Coconut Oil",
+      "pack_size": "55 gal drum",
+      "pack_size_text": "55 gal",
+      "quantity": 2,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "CO-FCO-DRUM",
+      "unit_price": 900.0,
+      "amount": 1800.0,
+      "match_confidence": 0.98,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "CO-FCO-DRUM"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Fractionated Coconut Oil"
+      ],
+      "item_name": "Fractionated Coconut Oil 55 gal drum",
+      "price_tier_min_qty": 1,
+      "available_qty": 8
+    },
+    {
+      "line_no": 2,
+      "line_ref": 2,
+      "request_text": "Lavender 40/42                | 5 gal  | 4",
+      "product_text": "Lavender 40/42",
+      "product": "Lavender Essential Oil 40/42",
+      "pack_size": "5 gal",
+      "pack_size_text": "5 gal",
+      "quantity": 4,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "EO-LAV4042-5GAL",
+      "unit_price": 1216.0,
+      "amount": 4864.0,
+      "match_confidence": 0.97,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-LAV4042-5GAL"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Lavender Essential Oil 40/42"
+      ],
+      "item_name": "Lavender Essential Oil 40/42 5 gal",
+      "price_tier_min_qty": 1,
+      "available_qty": 8
+    },
+    {
+      "line_no": 3,
+      "line_ref": 3,
+      "request_text": "Rosemary                      | 1 gal  | 6",
+      "product_text": "Rosemary",
+      "product": "Rosemary Essential Oil",
+      "pack_size": "1 gal",
+      "pack_size_text": "1 gal",
+      "quantity": 6,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "EO-ROS-1GAL",
+      "unit_price": 186.2,
+      "amount": 1117.2,
+      "match_confidence": 0.97,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-ROS-1GAL"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Rosemary Essential Oil"
+      ],
+      "item_name": "Rosemary Essential Oil 1 gal",
+      "price_tier_min_qty": 5,
+      "available_qty": 25
+    }
+  ],
+  "order_total": 7781.2,
+  "flags": [
+    {
+      "code": "ATTACHMENT_REFERENCED",
+      "severity": "info",
+      "detail": "SCL-PO-DRAFT-1182.pdf",
+      "source": "code"
+    }
+  ],
+  "summary_for_rep": "Customer sent a draft PO (pasted in body) and requests a quote for FCO (2 x 55 gal), Lavender 40/42 (4 x 5 gal) and Rosemary (6 x 1 gal); no ship-to or date given.",
+  "referenced_documents": [
+    {
+      "type": "attachment",
+      "ref": "SCL-PO-DRAFT-1182.pdf"
+    }
+  ],
+  "idempotency_key": "95470394ecccb02b0fd0b86fe31211d00f8281cae1815204e91cc851e45ffcb6",
+  "rep_context": {
+    "other_open_drafts": []
+  },
+  "netsuite_estimate": {
+    "externalId": "95470394ecccb02b0fd0b86fe31211d00f8281cae1815204e91cc851e45ffcb6",
+    "entity": {
+      "externalId": "C1007"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S07: PO draft attached - please quote",
+    "custbody_ai_review_state": "ready_for_review",
+    "custbody_ai_flags": [
+      "ATTACHMENT_REFERENCED"
+    ],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "CO-FCO-DRUM"
+          },
+          "quantity": 2,
+          "rate": 900.0,
+          "amount": 1800.0,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        },
+        {
+          "item": {
+            "externalId": "EO-LAV4042-5GAL"
+          },
+          "quantity": 4,
+          "rate": 1216.0,
+          "amount": 4864.0,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        },
+        {
+          "item": {
+            "externalId": "EO-ROS-1GAL"
+          },
+          "quantity": 6,
+          "rate": 186.2,
+          "amount": 1117.2,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00007"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:21:59+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 417,
+      "output_tokens": 913,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.011793,
+    "redactions_before_model": {},
+    "sent_to_model": {
+      "subject": "PO draft attached - please quote",
+      "body": "Please see our draft PO below (pasted from attachment) and send a quote.\n\n[Attachment: SCL-PO-DRAFT-1182.pdf]\nLine | Item                          | Size   | Qty\n1    | Fractionated Coconut Oil      | 55 gal | 2\n2    | Lavender 40/42                | 5 gal  | 4\n3    | Rosemary                      | 1 gal  | 6\n\nThank you,\nSunrise Cosmetics Lab Purchasing",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.95,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "Fractionated Coconut Oil      | 55 gal | 2",
+          "product_text": "Fractionated Coconut Oil",
+          "catalog_product": "Fractionated Coconut Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.98,
+          "quantity": 2,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "55 gal drum",
+          "pack_size_text": "55 gal",
+          "is_sample": false,
+          "ship_to_text": null
+        },
+        {
+          "line_ref": 2,
+          "source_text": "Lavender 40/42                | 5 gal  | 4",
+          "product_text": "Lavender 40/42",
+          "catalog_product": "Lavender Essential Oil 40/42",
+          "catalog_candidates": [],
+          "product_confidence": 0.97,
+          "quantity": 4,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "5 gal",
+          "pack_size_text": "5 gal",
+          "is_sample": false,
+          "ship_to_text": null
+        },
+        {
+          "line_ref": 3,
+          "source_text": "Rosemary                      | 1 gal  | 6",
+          "product_text": "Rosemary",
+          "catalog_product": "Rosemary Essential Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.97,
+          "quantity": 6,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "1 gal",
+          "pack_size_text": "1 gal",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [
+        {
+          "type": "attachment",
+          "ref": "SCL-PO-DRAFT-1182.pdf"
+        }
+      ],
+      "rep_attention": [],
+      "summary_for_rep": "Customer sent a draft PO (pasted in body) and requests a quote for FCO (2 x 55 gal), Lavender 40/42 (4 x 5 gal) and Rosemary (6 x 1 gal); no ship-to or date given."
+    }
+  }
+}

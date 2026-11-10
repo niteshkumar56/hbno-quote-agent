@@ -1,0 +1,106 @@
+{
+  "name": "record_extraction",
+  "description": "Record the structured extraction of one customer email. Called exactly once per email.",
+  "input_schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["intent", "intent_confidence", "secondary_intents", "language", "lines", "ship_to", "needed_by", "customer_price_requests", "referenced_documents", "rep_attention", "summary_for_rep"],
+    "properties": {
+      "intent": {
+        "type": "string",
+        "enum": ["quote_request", "quote_change", "reorder_by_reference", "sample_request", "order_placement", "order_status", "product_question", "complaint_or_return", "other"]
+      },
+      "intent_confidence": {"type": "number", "minimum": 0, "maximum": 1},
+      "secondary_intents": {
+        "type": "array",
+        "items": {"type": "string", "enum": ["quote_request", "quote_change", "reorder_by_reference", "sample_request", "order_placement", "order_status", "product_question", "complaint_or_return", "other"]}
+      },
+      "language": {"type": "string", "pattern": "^[a-z]{2}$"},
+      "lines": {
+        "type": "array",
+        "maxItems": 50,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["line_ref", "source_text", "product_text", "catalog_product", "catalog_candidates", "product_confidence", "quantity", "quantity_is_approximate", "quantity_unit", "pack_size", "pack_size_text", "is_sample", "ship_to_text"],
+          "properties": {
+            "line_ref": {"type": "integer", "minimum": 1},
+            "source_text": {"type": "string", "minLength": 1, "maxLength": 500},
+            "product_text": {"type": "string", "minLength": 1, "maxLength": 200},
+            "catalog_product": {"type": ["string", "null"]},
+            "catalog_candidates": {"type": "array", "items": {"type": "string"}},
+            "product_confidence": {"type": "number", "minimum": 0, "maximum": 1},
+            "quantity": {"type": ["number", "null"], "exclusiveMinimum": 0},
+            "quantity_is_approximate": {"type": "boolean"},
+            "quantity_unit": {"type": "string", "enum": ["container", "case", "lb", "kg", "g", "gal", "l", "ml", "fl_oz", "unknown"]},
+            "pack_size": {"type": ["string", "null"], "enum": ["4 oz", "16 oz", "1 gal", "5 gal", "55 gal drum", null]},
+            "pack_size_text": {"type": ["string", "null"], "maxLength": 100},
+            "is_sample": {"type": "boolean"},
+            "ship_to_text": {"type": ["string", "null"], "maxLength": 200}
+          }
+        }
+      },
+      "ship_to": {
+        "type": ["object", "null"],
+        "additionalProperties": false,
+        "required": ["text", "city", "region", "country"],
+        "properties": {
+          "text": {"type": "string", "maxLength": 300},
+          "city": {"type": ["string", "null"]},
+          "region": {"type": ["string", "null"]},
+          "country": {"type": ["string", "null"]}
+        }
+      },
+      "needed_by": {
+        "type": ["object", "null"],
+        "additionalProperties": false,
+        "required": ["text", "date", "is_vague"],
+        "properties": {
+          "text": {"type": "string", "maxLength": 200},
+          "date": {"type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+          "is_vague": {"type": "boolean"}
+        }
+      },
+      "customer_price_requests": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["line_ref", "kind", "amount", "per", "text"],
+          "properties": {
+            "line_ref": {"type": ["integer", "null"]},
+            "kind": {"type": "string", "enum": ["target_price", "discount_percent", "discount_amount", "competitor_price", "other"]},
+            "amount": {"type": ["number", "null"]},
+            "per": {"type": ["string", "null"], "enum": ["container", "gal", "lb", "kg", "order", "percent", null]},
+            "text": {"type": "string", "maxLength": 300}
+          }
+        }
+      },
+      "referenced_documents": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "ref"],
+          "properties": {
+            "type": {"type": "string", "enum": ["quote", "sales_order", "purchase_order", "invoice", "attachment", "other"]},
+            "ref": {"type": "string", "maxLength": 100}
+          }
+        }
+      },
+      "rep_attention": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["code", "detail"],
+          "properties": {
+            "code": {"type": "string", "enum": ["EMBEDDED_INSTRUCTIONS", "DISCOUNT_OR_TERMS_REQUEST", "REFERENCES_PRIOR_ORDER", "REFERENCES_EXISTING_QUOTE", "CONDITIONAL_REQUEST", "MULTIPLE_SHIP_TO", "ATTACHMENT_NOT_AVAILABLE", "AMBIGUOUS_REQUEST", "URGENT_OR_EXPEDITE", "NON_PRODUCT_REQUEST", "COMPLAINT_OR_ISSUE"]},
+            "detail": {"type": "string", "maxLength": 300}
+          }
+        }
+      },
+      "summary_for_rep": {"type": "string", "maxLength": 300}
+    }
+  }
+}

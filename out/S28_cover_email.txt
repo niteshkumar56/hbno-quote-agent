@@ -1,0 +1,35 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00025 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Sunrise Cosmetics Lab (C1007)
+Summary: Customer requests a quote for 3 drums sweet almond, 2 drums grapeseed and 6 x 5 gal castor oil, shipping to Irvine, CA by Dec 10.
+  [INFO   ] other open draft for this customer: DQ-2026-00007 ($7,781.20)
+  [INFO   ] other open draft for this customer: DQ-2026-00016 ($4,320.00)
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: purchasing@sunrisecoslab.example
+Subject: HBNO quote DQ-2026-00025 - Re: Quarterly carrier oils
+
+Hello Sunrise Cosmetics Lab team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+CO-ALM-DRUM Sweet Almond Oil 55 gal drum        3      $990.00    $2,970.00
+CO-GRP-DRUM Grapeseed Oil 55 gal drum           2      $720.00    $1,440.00
+CO-CAS-5GAL Castor Oil 5 gal                    6       $78.66      $471.96
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                $4,881.96
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 45.
+We've noted your need-by date of Dec 10, 2026.
+Ship to: Irvine, CA.
+
+Best regards,
+HBNO Sales

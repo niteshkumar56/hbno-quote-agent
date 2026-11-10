@@ -1,0 +1,180 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00026",
+  "status": "Draft - pending rep approval",
+  "review_state": "ready_for_review",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S29",
+    "sender": "anna@bloombath.example",
+    "subject": "Bulgarian lavender 5 gal",
+    "received_at": "2026-11-05 10:00"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1001",
+    "company": "Bloom & Bath Co",
+    "email_domain": "bloombath.example",
+    "terms": "Net 30",
+    "contact_email": "anna@bloombath.example"
+  },
+  "received_date": "2026-11-05",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "2 x 5 gal Bulgarian lavender",
+      "product_text": "Bulgarian lavender",
+      "product": "Lavender Essential Oil Bulgarian",
+      "pack_size": "5 gal",
+      "pack_size_text": "5 gal",
+      "quantity": 2,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "EO-LAVBG-5GAL",
+      "unit_price": 1984.0,
+      "amount": 3968.0,
+      "match_confidence": 0.98,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-LAVBG-5GAL"
+      ],
+      "flags": [
+        {
+          "code": "STOCK_INSUFFICIENT",
+          "severity": "warning",
+          "detail": "requested 2, available 1",
+          "source": "code"
+        }
+      ],
+      "candidate_products": [
+        "Lavender Essential Oil Bulgarian"
+      ],
+      "item_name": "Lavender Essential Oil Bulgarian 5 gal",
+      "price_tier_min_qty": 1,
+      "available_qty": 1
+    }
+  ],
+  "order_total": 3968.0,
+  "flags": [],
+  "summary_for_rep": "Customer requests a quote for two 5 gal containers of Bulgarian lavender essential oil; no ship-to or needed-by date given.",
+  "referenced_documents": [],
+  "idempotency_key": "31a0df254095f2e8b6a703aa951b84a6d0564c956d05206bf62bbd442ecaede5",
+  "rep_context": {
+    "other_open_drafts": [
+      [
+        "DQ-2026-00001",
+        "2394.00"
+      ],
+      [
+        "DQ-2026-00010",
+        "0.00"
+      ]
+    ]
+  },
+  "netsuite_estimate": {
+    "externalId": "31a0df254095f2e8b6a703aa951b84a6d0564c956d05206bf62bbd442ecaede5",
+    "entity": {
+      "externalId": "C1001"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S29: Bulgarian lavender 5 gal",
+    "custbody_ai_review_state": "ready_for_review",
+    "custbody_ai_flags": [],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "EO-LAVBG-5GAL"
+          },
+          "quantity": 2,
+          "rate": 1984.0,
+          "amount": 3968.0,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": [
+            "STOCK_INSUFFICIENT"
+          ]
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00026"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:23:23+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 280,
+      "output_tokens": 534,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.007729,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "Bulgarian lavender 5 gal",
+      "body": "Please quote 2 x 5 gal Bulgarian lavender. [NAME]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.98,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "2 x 5 gal Bulgarian lavender",
+          "product_text": "Bulgarian lavender",
+          "catalog_product": "Lavender Essential Oil Bulgarian",
+          "catalog_candidates": [
+            "Lavender Essential Oil Bulgarian"
+          ],
+          "product_confidence": 0.98,
+          "quantity": 2,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "5 gal",
+          "pack_size_text": "5 gal",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [],
+      "summary_for_rep": "Customer requests a quote for two 5 gal containers of Bulgarian lavender essential oil; no ship-to or needed-by date given."
+    }
+  }
+}

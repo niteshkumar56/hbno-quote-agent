@@ -1,0 +1,32 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00016 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Sunrise Cosmetics Lab (C1007)
+Summary: Customer requests availability and a quote for 2 drums (55 gal) of golden jojoba oil; no ship-to or needed-by date given.
+  [WARNING] STOCK_INSUFFICIENT: line 1: requested 2, available 1
+  [INFO   ] other open draft for this customer: DQ-2026-00007 ($7,781.20)
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: purchasing@sunrisecoslab.example
+Subject: HBNO quote DQ-2026-00016 - Re: Jojoba drum
+
+Hello Sunrise Cosmetics Lab team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+CO-JOJ-DRUM Jojoba Oil Golden 55 gal drum       2    $2,160.00    $4,320.00
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                $4,320.00
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 45.
+Availability: we currently have 1 of CO-JOJ-DRUM in stock; we'll confirm lead time for the balance.
+
+Best regards,
+HBNO Sales

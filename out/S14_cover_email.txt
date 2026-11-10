@@ -1,0 +1,32 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00013 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Northwind Candle Works (C1003)
+Summary: Customer requests a quote for two 5 gal containers of clove bud essential oil, shipping to Portland, OR by November 20.
+  [INFO   ] other open draft for this customer: DQ-2026-00002 ($3,944.00)
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: orders@northwindcandle.example
+Subject: HBNO quote DQ-2026-00013 - Re: Clove for holiday run
+
+Hello Northwind Candle Works team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+EO-CLO-5GAL Clove Bud Essential Oil 5 gal       2    $1,024.00    $2,048.00
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                $2,048.00
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 30.
+We've noted your need-by date of Nov 20, 2026.
+Ship to: Portland OR.
+
+Best regards,
+HBNO Sales

@@ -1,0 +1,25 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00011 | Status: Draft - pending rep approval | Review: needs_rep_action
+Customer: Lumen Labs Skincare (C1011)
+Summary: Customer asks for a quote on 3 x 16 oz Frankincense Carterii essential oil; no ship-to or needed-by date given.
+  [BLOCKER] SKU_INACTIVE: line 1: EO-FRC-16OZ is inactive; not quoted. Rep may offer an alternative manually
+  [INFO   ] other open draft for this customer: DQ-2026-00004 ($0.00)
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: buyer@lumenlabs.example
+Subject: HBNO quote DQ-2026-00011 - Re: Frankincense carterii
+
+Hello Lumen Labs Skincare team,
+
+Thank you for your request. Before we can price your request we need a few details.
+
+A few questions so we can complete your quote:
+  1. "frankincense carterii" is no longer available. Your rep will follow up with an alternative.
+
+Best regards,
+HBNO Sales

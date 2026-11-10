@@ -1,0 +1,228 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00012",
+  "status": "Draft - pending rep approval",
+  "review_state": "ready_for_review",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S13",
+    "sender": "compras@tierrabotanica.example",
+    "subject": "Cotizacion aceites",
+    "received_at": "2026-11-03 10:30"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1012",
+    "company": "Tierra Botanica",
+    "email_domain": "tierrabotanica.example",
+    "terms": "Net 30",
+    "contact_email": "compras@tierrabotanica.example"
+  },
+  "received_date": "2026-11-03",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "4 galones de aceite de ricino (castor), 1 gal cada uno",
+      "product_text": "aceite de ricino (castor)",
+      "product": "Castor Oil",
+      "pack_size": "1 gal",
+      "pack_size_text": "1 gal cada uno",
+      "quantity": 4,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "CO-CAS-1GAL",
+      "unit_price": 18.0,
+      "amount": 72.0,
+      "match_confidence": 0.98,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "CO-CAS-1GAL"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Castor Oil"
+      ],
+      "item_name": "Castor Oil 1 gal",
+      "price_tier_min_qty": 1,
+      "available_qty": 25
+    },
+    {
+      "line_no": 2,
+      "line_ref": 2,
+      "request_text": "2 cubetas de 5 galones de aceite de semilla de uva",
+      "product_text": "aceite de semilla de uva",
+      "product": "Grapeseed Oil",
+      "pack_size": "5 gal",
+      "pack_size_text": "cubetas de 5 galones",
+      "quantity": 2,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "CO-GRP-5GAL",
+      "unit_price": 73.6,
+      "amount": 147.2,
+      "match_confidence": 0.96,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "CO-GRP-5GAL"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Grapeseed Oil"
+      ],
+      "item_name": "Grapeseed Oil 5 gal",
+      "price_tier_min_qty": 1,
+      "available_qty": 8
+    }
+  ],
+  "order_total": 219.2,
+  "flags": [
+    {
+      "code": "NON_ENGLISH",
+      "severity": "info",
+      "detail": "language: es",
+      "source": "code"
+    }
+  ],
+  "summary_for_rep": "Customer from Tierra Botanica requests a quote for 4 x 1 gal castor oil and 2 x 5 gal grapeseed oil; no ship-to or date given.",
+  "referenced_documents": [],
+  "idempotency_key": "c3416ee97f07ea34da08d0769c04a88003d5299056af13a8a6d70d0b27704299",
+  "rep_context": {
+    "other_open_drafts": []
+  },
+  "netsuite_estimate": {
+    "externalId": "c3416ee97f07ea34da08d0769c04a88003d5299056af13a8a6d70d0b27704299",
+    "entity": {
+      "externalId": "C1012"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S13: Cotizacion aceites",
+    "custbody_ai_review_state": "ready_for_review",
+    "custbody_ai_flags": [
+      "NON_ENGLISH"
+    ],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "CO-CAS-1GAL"
+          },
+          "quantity": 4,
+          "rate": 18.0,
+          "amount": 72.0,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        },
+        {
+          "item": {
+            "externalId": "CO-GRP-5GAL"
+          },
+          "quantity": 2,
+          "rate": 73.6,
+          "amount": 147.2,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00012"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:22:21+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 349,
+      "output_tokens": 722,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.009747,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "Cotizacion aceites",
+      "body": "Hola, necesitamos cotizacion para:\n- 4 galones de aceite de ricino (castor), 1 gal cada uno\n- 2 cubetas de 5 galones de aceite de semilla de uva\nGracias, [NAME] - Tierra Botanica",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.97,
+      "secondary_intents": [],
+      "language": "es",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "4 galones de aceite de ricino (castor), 1 gal cada uno",
+          "product_text": "aceite de ricino (castor)",
+          "catalog_product": "Castor Oil",
+          "catalog_candidates": [
+            "Castor Oil"
+          ],
+          "product_confidence": 0.98,
+          "quantity": 4,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "1 gal",
+          "pack_size_text": "1 gal cada uno",
+          "is_sample": false,
+          "ship_to_text": null
+        },
+        {
+          "line_ref": 2,
+          "source_text": "2 cubetas de 5 galones de aceite de semilla de uva",
+          "product_text": "aceite de semilla de uva",
+          "catalog_product": "Grapeseed Oil",
+          "catalog_candidates": [
+            "Grapeseed Oil"
+          ],
+          "product_confidence": 0.96,
+          "quantity": 2,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "5 gal",
+          "pack_size_text": "cubetas de 5 galones",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [],
+      "summary_for_rep": "Customer from Tierra Botanica requests a quote for 4 x 1 gal castor oil and 2 x 5 gal grapeseed oil; no ship-to or date given."
+    }
+  }
+}

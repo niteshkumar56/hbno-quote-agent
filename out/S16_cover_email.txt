@@ -1,0 +1,32 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00015 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Pure Leaf Soaps (C1002)
+Summary: Customer requests a quote for 5 x 5 gal sweet orange and 3 x 5 gal lavender 40/42 for a soap run; no ship-to or date given.
+  [WARNING] CREDIT_LIMIT_EXCEEDED: open balance 18500.00 + this quote 5472.00 = 23972.00 > limit 20000.00 (over by 3972.00)
+  [INFO   ] other open draft for this customer: DQ-2026-00008 ($1,638.00)
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: sam@pureleafsoaps.example
+Subject: HBNO quote DQ-2026-00015 - Re: Big soap run
+
+Hello Pure Leaf Soaps team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+EO-ORA-5GAL Sweet Orange Essential Oil 5 ga     5      $364.80    $1,824.00
+EO-LAV4042-5GAL Lavender Essential Oil 40/4     3    $1,216.00    $3,648.00
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                $5,472.00
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 30.
+
+Best regards,
+HBNO Sales

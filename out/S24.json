@@ -1,0 +1,222 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00022",
+  "status": "Draft - pending rep approval",
+  "review_state": "ready_for_review",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S24",
+    "sender": "maria@greenvalleyapothecary.example",
+    "subject": "gallon of castor",
+    "received_at": "2026-11-04 13:30"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1006",
+    "company": "Green Valley Apothecary",
+    "email_domain": "greenvalleyapothecary.example",
+    "terms": "Net 30",
+    "contact_email": "maria@greenvalleyapothecary.example"
+  },
+  "received_date": "2026-11-04",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "1 gallon castor oil",
+      "product_text": "castor oil",
+      "product": "Castor Oil",
+      "pack_size": "1 gal",
+      "pack_size_text": "1 gallon",
+      "quantity": 1,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "CO-CAS-1GAL",
+      "unit_price": 18.0,
+      "amount": 18.0,
+      "match_confidence": 0.98,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "CO-CAS-1GAL"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Castor Oil"
+      ],
+      "item_name": "Castor Oil 1 gal",
+      "price_tier_min_qty": 1,
+      "available_qty": 25
+    },
+    {
+      "line_no": 2,
+      "line_ref": 2,
+      "request_text": "two 4oz clove",
+      "product_text": "clove",
+      "product": "Clove Bud Essential Oil",
+      "pack_size": "4 oz",
+      "pack_size_text": "4oz",
+      "quantity": 2,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "EO-CLO-4OZ",
+      "unit_price": 10.24,
+      "amount": 20.48,
+      "match_confidence": 0.95,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-CLO-4OZ"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Clove Bud Essential Oil"
+      ],
+      "item_name": "Clove Bud Essential Oil 4 oz",
+      "price_tier_min_qty": 1,
+      "available_qty": 40
+    }
+  ],
+  "order_total": 38.48,
+  "flags": [],
+  "summary_for_rep": "Customer asks for one 1 gal castor oil and two 4 oz clove (bud) oil; no ship-to or needed-by date given.",
+  "referenced_documents": [],
+  "idempotency_key": "23c39b01bc1d86725e15cd22a497f3a990655f255766db0298141e78f55cfe01",
+  "rep_context": {
+    "other_open_drafts": [
+      [
+        "DQ-2026-00003",
+        "0.00"
+      ],
+      [
+        "DQ-2026-00014",
+        "96.72"
+      ]
+    ]
+  },
+  "netsuite_estimate": {
+    "externalId": "23c39b01bc1d86725e15cd22a497f3a990655f255766db0298141e78f55cfe01",
+    "entity": {
+      "externalId": "C1006"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S24: gallon of castor",
+    "custbody_ai_review_state": "ready_for_review",
+    "custbody_ai_flags": [],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "CO-CAS-1GAL"
+          },
+          "quantity": 1,
+          "rate": 18.0,
+          "amount": 18.0,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        },
+        {
+          "item": {
+            "externalId": "EO-CLO-4OZ"
+          },
+          "quantity": 2,
+          "rate": 10.24,
+          "amount": 20.48,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00022"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:23:05+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 277,
+      "output_tokens": 638,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.008763,
+    "redactions_before_model": {},
+    "sent_to_model": {
+      "subject": "gallon of castor",
+      "body": "1 gallon castor oil and two 4oz clove please",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.85,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "1 gallon castor oil",
+          "product_text": "castor oil",
+          "catalog_product": "Castor Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.98,
+          "quantity": 1,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "1 gal",
+          "pack_size_text": "1 gallon",
+          "is_sample": false,
+          "ship_to_text": null
+        },
+        {
+          "line_ref": 2,
+          "source_text": "two 4oz clove",
+          "product_text": "clove",
+          "catalog_product": "Clove Bud Essential Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.95,
+          "quantity": 2,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "4 oz",
+          "pack_size_text": "4oz",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [],
+      "summary_for_rep": "Customer asks for one 1 gal castor oil and two 4 oz clove (bud) oil; no ship-to or needed-by date given."
+    }
+  }
+}

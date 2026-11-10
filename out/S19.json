@@ -1,0 +1,256 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00018",
+  "status": "Draft - pending rep approval",
+  "review_state": "ready_for_review",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S19",
+    "sender": "kevin@coastalwellness.example",
+    "subject": "Tea tree and peppermint",
+    "received_at": "2026-11-04 08:20"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1009",
+    "company": "Coastal Wellness",
+    "email_domain": "coastalwellness.example",
+    "terms": "Net 30",
+    "contact_email": "kevin@coastalwellness.example"
+  },
+  "received_date": "2026-11-04",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "24 x 16 oz tea tree",
+      "product_text": "tea tree",
+      "product": "Tea Tree Essential Oil",
+      "pack_size": "16 oz",
+      "pack_size_text": "16 oz",
+      "quantity": 24,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "EO-TEA-16OZ",
+      "unit_price": 27.0,
+      "amount": 648.0,
+      "match_confidence": 0.98,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-TEA-16OZ"
+      ],
+      "flags": [
+        {
+          "code": "TIER_BREAK_OPPORTUNITY",
+          "severity": "info",
+          "detail": "25 units at 25.50 = 637.50 (vs 24 at 27.00 = 648.00); quantity not changed",
+          "source": "code"
+        }
+      ],
+      "candidate_products": [
+        "Tea Tree Essential Oil"
+      ],
+      "item_name": "Tea Tree Essential Oil 16 oz",
+      "price_tier_min_qty": 10,
+      "next_tier": {
+        "qty": 25,
+        "unit_price": 25.5,
+        "amount": 637.5
+      },
+      "available_qty": 40
+    },
+    {
+      "line_no": 2,
+      "line_ref": 2,
+      "request_text": "24 x 16 oz peppermint",
+      "product_text": "peppermint",
+      "product": "Peppermint Essential Oil",
+      "pack_size": "16 oz",
+      "pack_size_text": "16 oz",
+      "quantity": 24,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "EO-PEP-16OZ",
+      "unit_price": 30.6,
+      "amount": 734.4,
+      "match_confidence": 0.98,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-PEP-16OZ"
+      ],
+      "flags": [
+        {
+          "code": "TIER_BREAK_OPPORTUNITY",
+          "severity": "info",
+          "detail": "25 units at 28.90 = 722.50 (vs 24 at 30.60 = 734.40); quantity not changed",
+          "source": "code"
+        }
+      ],
+      "candidate_products": [
+        "Peppermint Essential Oil"
+      ],
+      "item_name": "Peppermint Essential Oil 16 oz",
+      "price_tier_min_qty": 10,
+      "next_tier": {
+        "qty": 25,
+        "unit_price": 28.9,
+        "amount": 722.5
+      },
+      "available_qty": 40
+    }
+  ],
+  "order_total": 1382.4,
+  "flags": [
+    {
+      "code": "CREDIT_LIMIT_EXCEEDED",
+      "severity": "warning",
+      "detail": "open balance 39000.00 + this quote 1382.40 = 40382.40 > limit 40000.00 (over by 382.40)",
+      "source": "code"
+    }
+  ],
+  "summary_for_rep": "Customer requests a quote for 24 x 16 oz tea tree and 24 x 16 oz peppermint essential oil; no ship-to or needed-by date given.",
+  "referenced_documents": [],
+  "idempotency_key": "13bbfe2f0040f149ae1a41e2c89510dbe96649b5b97285770c4f67f99c14c7c8",
+  "rep_context": {
+    "other_open_drafts": []
+  },
+  "netsuite_estimate": {
+    "externalId": "13bbfe2f0040f149ae1a41e2c89510dbe96649b5b97285770c4f67f99c14c7c8",
+    "entity": {
+      "externalId": "C1009"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S19: Tea tree and peppermint",
+    "custbody_ai_review_state": "ready_for_review",
+    "custbody_ai_flags": [
+      "CREDIT_LIMIT_EXCEEDED"
+    ],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "EO-TEA-16OZ"
+          },
+          "quantity": 24,
+          "rate": 27.0,
+          "amount": 648.0,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": [
+            "TIER_BREAK_OPPORTUNITY"
+          ]
+        },
+        {
+          "item": {
+            "externalId": "EO-PEP-16OZ"
+          },
+          "quantity": 24,
+          "rate": 30.6,
+          "amount": 734.4,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": [
+            "TIER_BREAK_OPPORTUNITY"
+          ]
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00018"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:22:44+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 373,
+      "output_tokens": 662,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.009195,
+    "redactions_before_model": {
+      "address": 1,
+      "email": 1,
+      "zip": 1,
+      "name": 1,
+      "phone": 1
+    },
+    "sent_to_model": {
+      "subject": "Tea tree and peppermint",
+      "body": "Hello HBNO,\nRequesting a quote for 24 x 16 oz tea tree and 24 x 16 oz peppermint.\n\n[NAME]\nDirector of Operations, Coastal Wellness\n[ADDRESS], Ventura CA [ZIP]\nMobile [PHONE] | [EMAIL]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.97,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "24 x 16 oz tea tree",
+          "product_text": "tea tree",
+          "catalog_product": "Tea Tree Essential Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.98,
+          "quantity": 24,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "16 oz",
+          "pack_size_text": "16 oz",
+          "is_sample": false,
+          "ship_to_text": null
+        },
+        {
+          "line_ref": 2,
+          "source_text": "24 x 16 oz peppermint",
+          "product_text": "peppermint",
+          "catalog_product": "Peppermint Essential Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.98,
+          "quantity": 24,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "16 oz",
+          "pack_size_text": "16 oz",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [],
+      "summary_for_rep": "Customer requests a quote for 24 x 16 oz tea tree and 24 x 16 oz peppermint essential oil; no ship-to or needed-by date given."
+    }
+  }
+}

@@ -1,0 +1,32 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00006 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: NEW LEAD (freemail.example)
+Summary: Customer starting a small skincare line asks for a quote on 2 x 5 gal jojoba oil; no ship-to or date given.
+  [WARNING] NEW_LEAD: unknown domain freemail.example
+  [WARNING] CREDIT_NOT_ESTABLISHED: no terms on file: credit application or prepayment needed
+  [WARNING] SHIP_TO_MISSING: no ship-to stated and no address on file
+  [INFO   ] FREEMAIL_DOMAIN: freemail.example
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: j.morales@freemail.example
+Subject: HBNO quote DQ-2026-00006 - Re: price for jojoba
+
+Hello,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+CO-JOJ-5GAL Jojoba Oil Golden 5 gal             2      $220.80      $441.60
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                  $441.60
+
+Quote valid until Nov 18, 2026.
+
+Best regards,
+HBNO Sales

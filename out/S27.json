@@ -1,0 +1,101 @@
+{
+  "record_type": "triage",
+  "quote_number": null,
+  "status": "Triage - not a quote",
+  "review_state": "needs_rep_action",
+  "route_to": "Customer service: order status",
+  "intent": "order_status",
+  "source": {
+    "email_id": "S27",
+    "sender": "kevin@coastalwellness.example",
+    "subject": "Order status",
+    "received_at": "2026-11-05 08:30"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1009",
+    "company": "Coastal Wellness",
+    "email_domain": "coastalwellness.example",
+    "terms": "Net 30",
+    "contact_email": "kevin@coastalwellness.example"
+  },
+  "received_date": "2026-11-05",
+  "quote_date": "2026-11-11",
+  "expiry_date": null,
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [],
+  "order_total": null,
+  "flags": [
+    {
+      "code": "NOT_QUOTE_REQUEST",
+      "severity": "blocker",
+      "detail": "intent: order_status",
+      "source": "llm"
+    },
+    {
+      "code": "COMPLAINT_OR_ISSUE",
+      "severity": "warning",
+      "detail": "Customer says order SO-55120 was due yesterday and has not arrived.",
+      "source": "llm"
+    }
+  ],
+  "summary_for_rep": "Customer asks for the status of order SO-55120, which they say was due yesterday.",
+  "referenced_documents": [
+    {
+      "type": "sales_order",
+      "ref": "SO-55120"
+    }
+  ],
+  "idempotency_key": "dd29ffa0cd3d4b9b5f989d5606dcf738fe76a9974f745c1c865a0782b9eb9e61",
+  "rep_context": {
+    "other_open_drafts": []
+  },
+  "netsuite_estimate": null,
+  "audit": {
+    "processed_at": "2026-11-10T19:23:15+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 280,
+      "output_tokens": 404,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.006429,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "Order status",
+      "body": "Hi, where is my order SO-55120? It was due yesterday. [NAME]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "order_status",
+      "intent_confidence": 0.97,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [
+        {
+          "type": "sales_order",
+          "ref": "SO-55120"
+        }
+      ],
+      "rep_attention": [
+        {
+          "code": "COMPLAINT_OR_ISSUE",
+          "detail": "Customer says order SO-55120 was due yesterday and has not arrived."
+        }
+      ],
+      "summary_for_rep": "Customer asks for the status of order SO-55120, which they say was due yesterday."
+    }
+  }
+}

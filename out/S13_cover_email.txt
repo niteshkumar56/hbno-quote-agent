@@ -1,0 +1,31 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00012 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Tierra Botanica (C1012)
+Summary: Customer from Tierra Botanica requests a quote for 4 x 1 gal castor oil and 2 x 5 gal grapeseed oil; no ship-to or date given.
+  [INFO   ] NON_ENGLISH: language: es
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: compras@tierrabotanica.example
+Subject: HBNO quote DQ-2026-00012 - Re: Cotizacion aceites
+
+Hello Tierra Botanica team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+CO-CAS-1GAL Castor Oil 1 gal                    4       $18.00       $72.00
+CO-GRP-5GAL Grapeseed Oil 5 gal                 2       $73.60      $147.20
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                  $219.20
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 30.
+
+Best regards,
+HBNO Sales

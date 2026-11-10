@@ -1,0 +1,165 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00014",
+  "status": "Draft - pending rep approval",
+  "review_state": "ready_for_review",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S15",
+    "sender": "maria@greenvalleyapothecary.example",
+    "subject": "rosemary",
+    "received_at": "2026-11-03 12:00"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1006",
+    "company": "Green Valley Apothecary",
+    "email_domain": "greenvalleyapothecary.example",
+    "terms": "Net 30",
+    "contact_email": "maria@greenvalleyapothecary.example"
+  },
+  "received_date": "2026-11-03",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "a dozen 4oz rosemary",
+      "product_text": "rosemary",
+      "product": "Rosemary Essential Oil",
+      "pack_size": "4 oz",
+      "pack_size_text": "4oz",
+      "quantity": 12,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "EO-ROS-4OZ",
+      "unit_price": 8.06,
+      "amount": 96.72,
+      "match_confidence": 0.97,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-ROS-4OZ"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Rosemary Essential Oil"
+      ],
+      "item_name": "Rosemary Essential Oil 4 oz",
+      "price_tier_min_qty": 10,
+      "available_qty": 40
+    }
+  ],
+  "order_total": 96.72,
+  "flags": [],
+  "summary_for_rep": "Customer requests a quote for a dozen 4 oz containers of rosemary essential oil; no ship-to or needed-by date given.",
+  "referenced_documents": [],
+  "idempotency_key": "b408978f9023e380263a269d38afa66999048fa01ade4b9206bc4ec8b3ae8267",
+  "rep_context": {
+    "other_open_drafts": [
+      [
+        "DQ-2026-00003",
+        "0.00"
+      ]
+    ]
+  },
+  "netsuite_estimate": {
+    "externalId": "b408978f9023e380263a269d38afa66999048fa01ade4b9206bc4ec8b3ae8267",
+    "entity": {
+      "externalId": "C1006"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S15: rosemary",
+    "custbody_ai_review_state": "ready_for_review",
+    "custbody_ai_flags": [],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "EO-ROS-4OZ"
+          },
+          "quantity": 12,
+          "rate": 8.06,
+          "amount": 96.72,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00014"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:22:28+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 269,
+      "output_tokens": 499,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.007357,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "rosemary",
+      "body": "please quote a dozen 4oz rosemary. [NAME]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.97,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "a dozen 4oz rosemary",
+          "product_text": "rosemary",
+          "catalog_product": "Rosemary Essential Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.97,
+          "quantity": 12,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "4 oz",
+          "pack_size_text": "4oz",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [],
+      "summary_for_rep": "Customer requests a quote for a dozen 4 oz containers of rosemary essential oil; no ship-to or needed-by date given."
+    }
+  }
+}

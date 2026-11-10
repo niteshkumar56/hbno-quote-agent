@@ -1,0 +1,33 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00005 | Status: Draft - pending rep approval | Review: needs_rep_action
+Customer: Serenity Spa Supply (C1004)
+Summary: Customer requests a quote for 8 x 16 oz eucalyptus radiata and 4 x 1 gal sweet almond oil, needed sometime in December; no ship-to given.
+  [BLOCKER] CREDIT_HOLD: Serenity Spa Supply is on credit hold
+  [WARNING] CREDIT_LIMIT_EXCEEDED: open balance 11200.00 + this quote 361.60 = 11561.60 > limit 10000.00 (over by 1561.60)
+  [INFO   ] NEEDED_BY_VAGUE: 'Order for December'
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: kate@serenityspa.example
+Subject: HBNO quote DQ-2026-00005 - Re: Order for December
+
+Hello Serenity Spa Supply team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+EO-EUCR-16OZ Eucalyptus Radiata Essential O     8       $34.20      $273.60
+CO-ALM-1GAL Sweet Almond Oil 1 gal              4       $22.00       $88.00
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                  $361.60
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 30.
+
+Best regards,
+HBNO Sales

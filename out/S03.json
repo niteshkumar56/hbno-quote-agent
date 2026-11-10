@@ -1,0 +1,251 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00003",
+  "status": "Draft - pending rep approval",
+  "review_state": "needs_rep_action",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S03",
+    "sender": "maria@greenvalleyapothecary.example",
+    "subject": "need pricing",
+    "received_at": "2026-11-02 10:05"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1006",
+    "company": "Green Valley Apothecary",
+    "email_domain": "greenvalleyapothecary.example",
+    "terms": "Net 30",
+    "contact_email": "maria@greenvalleyapothecary.example"
+  },
+  "received_date": "2026-11-02",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "lav 40/42",
+      "product_text": "lav 40/42",
+      "product": "Lavender Essential Oil 40/42",
+      "pack_size": null,
+      "pack_size_text": null,
+      "quantity": 6,
+      "quantity_unit": "unknown",
+      "ship_to_text": null,
+      "sku": null,
+      "unit_price": null,
+      "amount": null,
+      "match_confidence": 0.97,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-LAV4042-4OZ",
+        "EO-LAV4042-16OZ",
+        "EO-LAV4042-1GAL",
+        "EO-LAV4042-5GAL"
+      ],
+      "flags": [
+        {
+          "code": "PACK_SIZE_MISSING",
+          "severity": "blocker",
+          "detail": "customer did not state a pack size",
+          "source": "code"
+        },
+        {
+          "code": "QTY_UNCERTAIN",
+          "severity": "warning",
+          "detail": "customer hedged the quantity ('lav 40/42')",
+          "source": "llm"
+        }
+      ],
+      "candidate_products": [
+        "Lavender Essential Oil 40/42"
+      ]
+    },
+    {
+      "line_no": 2,
+      "line_ref": 2,
+      "request_text": "peppermint",
+      "product_text": "peppermint",
+      "product": "Peppermint Essential Oil",
+      "pack_size": null,
+      "pack_size_text": null,
+      "quantity": 6,
+      "quantity_unit": "unknown",
+      "ship_to_text": null,
+      "sku": null,
+      "unit_price": null,
+      "amount": null,
+      "match_confidence": 0.97,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-PEP-4OZ",
+        "EO-PEP-16OZ",
+        "EO-PEP-1GAL",
+        "EO-PEP-5GAL"
+      ],
+      "flags": [
+        {
+          "code": "PACK_SIZE_MISSING",
+          "severity": "blocker",
+          "detail": "customer did not state a pack size",
+          "source": "code"
+        },
+        {
+          "code": "QTY_UNCERTAIN",
+          "severity": "warning",
+          "detail": "customer hedged the quantity ('peppermint')",
+          "source": "llm"
+        }
+      ],
+      "candidate_products": [
+        "Peppermint Essential Oil"
+      ]
+    }
+  ],
+  "order_total": 0.0,
+  "flags": [
+    {
+      "code": "CLARIFICATION_NEEDED",
+      "severity": "warning",
+      "detail": "Quantity 'maybe 6 of each' has no unit or pack size; rep must confirm what is being counted (containers, pack size, lb, gal) and the size for each product.",
+      "source": "llm"
+    }
+  ],
+  "summary_for_rep": "Customer asks for pricing on Lavender 40/42 and peppermint, approximately 6 of each, with no unit, pack size, ship-to or date given.",
+  "referenced_documents": [],
+  "idempotency_key": "9f262b94a6a6a725bee4f9bc935feacf926d3f2de4fa5982c382cbec32d0d4a6",
+  "rep_context": {
+    "other_open_drafts": []
+  },
+  "netsuite_estimate": {
+    "externalId": "9f262b94a6a6a725bee4f9bc935feacf926d3f2de4fa5982c382cbec32d0d4a6",
+    "entity": {
+      "externalId": "C1006"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S03: need pricing",
+    "custbody_ai_review_state": "needs_rep_action",
+    "custbody_ai_flags": [
+      "CLARIFICATION_NEEDED"
+    ],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "AI-UNRESOLVED-LINE"
+          },
+          "description": "UNPRICED - needs rep: lav 40/42",
+          "custcol_ai_flags": [
+            "PACK_SIZE_MISSING",
+            "QTY_UNCERTAIN"
+          ]
+        },
+        {
+          "item": {
+            "externalId": "AI-UNRESOLVED-LINE"
+          },
+          "description": "UNPRICED - needs rep: peppermint",
+          "custcol_ai_flags": [
+            "PACK_SIZE_MISSING",
+            "QTY_UNCERTAIN"
+          ]
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00003"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:21:42+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 286,
+      "output_tokens": 723,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.009631,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "need pricing",
+      "body": "hi, can you send pricing on lav 40/42 and some peppermint? maybe 6 of each. thanks [NAME]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.95,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "lav 40/42",
+          "product_text": "lav 40/42",
+          "catalog_product": "Lavender Essential Oil 40/42",
+          "catalog_candidates": [],
+          "product_confidence": 0.97,
+          "quantity": 6,
+          "quantity_is_approximate": true,
+          "quantity_unit": "unknown",
+          "pack_size": null,
+          "pack_size_text": null,
+          "is_sample": false,
+          "ship_to_text": null
+        },
+        {
+          "line_ref": 2,
+          "source_text": "peppermint",
+          "product_text": "peppermint",
+          "catalog_product": "Peppermint Essential Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.97,
+          "quantity": 6,
+          "quantity_is_approximate": true,
+          "quantity_unit": "unknown",
+          "pack_size": null,
+          "pack_size_text": null,
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [
+        {
+          "code": "AMBIGUOUS_REQUEST",
+          "detail": "Quantity 'maybe 6 of each' has no unit or pack size; rep must confirm what is being counted (containers, pack size, lb, gal) and the size for each product."
+        }
+      ],
+      "summary_for_rep": "Customer asks for pricing on Lavender 40/42 and peppermint, approximately 6 of each, with no unit, pack size, ship-to or date given."
+    }
+  }
+}

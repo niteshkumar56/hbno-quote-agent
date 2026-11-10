@@ -1,0 +1,168 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00023",
+  "status": "Draft - pending rep approval",
+  "review_state": "needs_rep_action",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S25",
+    "sender": "compras@tierrabotanica.example",
+    "subject": "Almond 25 kg",
+    "received_at": "2026-11-04 14:10"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1012",
+    "company": "Tierra Botanica",
+    "email_domain": "tierrabotanica.example",
+    "terms": "Net 30",
+    "contact_email": "compras@tierrabotanica.example"
+  },
+  "received_date": "2026-11-04",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "25 kg sweet almond oil",
+      "product_text": "sweet almond oil",
+      "product": "Sweet Almond Oil",
+      "pack_size": null,
+      "pack_size_text": null,
+      "quantity": 25,
+      "quantity_unit": "kg",
+      "ship_to_text": null,
+      "sku": null,
+      "unit_price": null,
+      "amount": null,
+      "match_confidence": 0.98,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "CO-ALM-1GAL",
+        "CO-ALM-5GAL",
+        "CO-ALM-DRUM"
+      ],
+      "flags": [
+        {
+          "code": "UNIT_NOT_SELLABLE",
+          "severity": "blocker",
+          "detail": "requested 25 kg; sold only as a count of 4 oz / 16 oz / 1 gal / 5 gal / drum packs",
+          "source": "code"
+        }
+      ],
+      "candidate_products": [
+        "Sweet Almond Oil"
+      ]
+    }
+  ],
+  "order_total": 0.0,
+  "flags": [],
+  "summary_for_rep": "Customer requests a quote for 25 kg of sweet almond oil, with no pack size, ship-to or needed-by date given.",
+  "referenced_documents": [],
+  "idempotency_key": "5f3ec956186737068b13e192da7dee77a178c6b48b32c7ea07a63d4c6d9c4a64",
+  "rep_context": {
+    "other_open_drafts": [
+      [
+        "DQ-2026-00012",
+        "219.20"
+      ]
+    ]
+  },
+  "netsuite_estimate": {
+    "externalId": "5f3ec956186737068b13e192da7dee77a178c6b48b32c7ea07a63d4c6d9c4a64",
+    "entity": {
+      "externalId": "C1012"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S25: Almond 25 kg",
+    "custbody_ai_review_state": "needs_rep_action",
+    "custbody_ai_flags": [],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "AI-UNRESOLVED-LINE"
+          },
+          "description": "UNPRICED - needs rep: 25 kg sweet almond oil",
+          "custcol_ai_flags": [
+            "UNIT_NOT_SELLABLE"
+          ]
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00023"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:23:08+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 289,
+      "output_tokens": 494,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.007347,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "Almond 25 kg",
+      "body": "Hi, please quote 25 kg sweet almond oil. [NAME]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.97,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "25 kg sweet almond oil",
+          "product_text": "sweet almond oil",
+          "catalog_product": "Sweet Almond Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.98,
+          "quantity": 25,
+          "quantity_is_approximate": false,
+          "quantity_unit": "kg",
+          "pack_size": null,
+          "pack_size_text": null,
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [],
+      "summary_for_rep": "Customer requests a quote for 25 kg of sweet almond oil, with no pack size, ship-to or needed-by date given."
+    }
+  }
+}

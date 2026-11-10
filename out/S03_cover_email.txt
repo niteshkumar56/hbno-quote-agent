@@ -1,0 +1,29 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00003 | Status: Draft - pending rep approval | Review: needs_rep_action
+Customer: Green Valley Apothecary (C1006)
+Summary: Customer asks for pricing on Lavender 40/42 and peppermint, approximately 6 of each, with no unit, pack size, ship-to or date given.
+  [BLOCKER] PACK_SIZE_MISSING: line 1: customer did not state a pack size
+  [BLOCKER] PACK_SIZE_MISSING: line 2: customer did not state a pack size
+  [WARNING] CLARIFICATION_NEEDED: Quantity 'maybe 6 of each' has no unit or pack size; rep must confirm what is being counted (containers, pack size, lb, gal) and the size for each product.
+  [WARNING] QTY_UNCERTAIN: line 1: customer hedged the quantity ('lav 40/42')
+  [WARNING] QTY_UNCERTAIN: line 2: customer hedged the quantity ('peppermint')
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: maria@greenvalleyapothecary.example
+Subject: HBNO quote DQ-2026-00003 - Re: need pricing
+
+Hello Green Valley Apothecary team,
+
+Thank you for your request. Before we can price your request we need a few details.
+
+A few questions so we can complete your quote:
+  1. Which pack size would you like for lav 40/42 (4 oz, 16 oz, 1 gal, 5 gal or 55 gal drum)?
+  2. Which pack size would you like for peppermint (4 oz, 16 oz, 1 gal, 5 gal or 55 gal drum)?
+
+Best regards,
+HBNO Sales

@@ -1,0 +1,194 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00006",
+  "status": "Draft - pending rep approval",
+  "review_state": "ready_for_review",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S06",
+    "sender": "j.morales@freemail.example",
+    "subject": "price for jojoba",
+    "received_at": "2026-11-02 13:02"
+  },
+  "customer": {
+    "type": "new_lead",
+    "customer_id": null,
+    "company": null,
+    "email_domain": "freemail.example",
+    "contact_email": "j.morales@freemail.example"
+  },
+  "received_date": "2026-11-02",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "2 x 5 gallon jojoba",
+      "product_text": "jojoba",
+      "product": "Jojoba Oil Golden",
+      "pack_size": "5 gal",
+      "pack_size_text": "5 gallon",
+      "quantity": 2,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "CO-JOJ-5GAL",
+      "unit_price": 220.8,
+      "amount": 441.6,
+      "match_confidence": 0.95,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "CO-JOJ-5GAL"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Jojoba Oil Golden"
+      ],
+      "item_name": "Jojoba Oil Golden 5 gal",
+      "price_tier_min_qty": 1,
+      "available_qty": 8
+    }
+  ],
+  "order_total": 441.6,
+  "flags": [
+    {
+      "code": "NEW_LEAD",
+      "severity": "warning",
+      "detail": "unknown domain freemail.example",
+      "source": "code"
+    },
+    {
+      "code": "CREDIT_NOT_ESTABLISHED",
+      "severity": "warning",
+      "detail": "no terms on file: credit application or prepayment needed",
+      "source": "code"
+    },
+    {
+      "code": "FREEMAIL_DOMAIN",
+      "severity": "info",
+      "detail": "freemail.example",
+      "source": "code"
+    },
+    {
+      "code": "SHIP_TO_MISSING",
+      "severity": "warning",
+      "detail": "no ship-to stated and no address on file",
+      "source": "code"
+    }
+  ],
+  "summary_for_rep": "Customer starting a small skincare line asks for a quote on 2 x 5 gal jojoba oil; no ship-to or date given.",
+  "referenced_documents": [],
+  "idempotency_key": "cc73fcafc7c86618d0fc534fc788b5c8f6a120d9cfd4934d2a4c6dff1f3debdb",
+  "rep_context": {
+    "other_open_drafts": []
+  },
+  "netsuite_estimate": {
+    "externalId": "cc73fcafc7c86618d0fc534fc788b5c8f6a120d9cfd4934d2a4c6dff1f3debdb",
+    "entity": null,
+    "prerequisites": [
+      {
+        "action": "find_or_create_prospect",
+        "email": "j.morales@freemail.example",
+        "company": null,
+        "then": "set entity to the prospect's internal id"
+      }
+    ],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S06: price for jojoba",
+    "custbody_ai_review_state": "ready_for_review",
+    "custbody_ai_flags": [
+      "NEW_LEAD",
+      "CREDIT_NOT_ESTABLISHED",
+      "FREEMAIL_DOMAIN",
+      "SHIP_TO_MISSING"
+    ],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "CO-JOJ-5GAL"
+          },
+          "quantity": 2,
+          "rate": 220.8,
+          "amount": 441.6,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00006"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:21:53+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 295,
+      "output_tokens": 502,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.007439,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "price for jojoba",
+      "body": "Hello, I'm starting a small skincare line. How much for 2 x 5 gallon jojoba? [NAME]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.97,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "2 x 5 gallon jojoba",
+          "product_text": "jojoba",
+          "catalog_product": "Jojoba Oil Golden",
+          "catalog_candidates": [],
+          "product_confidence": 0.95,
+          "quantity": 2,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "5 gal",
+          "pack_size_text": "5 gallon",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [],
+      "summary_for_rep": "Customer starting a small skincare line asks for a quote on 2 x 5 gal jojoba oil; no ship-to or date given."
+    }
+  }
+}

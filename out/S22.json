@@ -1,0 +1,198 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00020",
+  "status": "Draft - pending rep approval",
+  "review_state": "ready_for_review",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S22",
+    "sender": "buyer@lumenlabs.example",
+    "subject": "Frankincense serrata",
+    "received_at": "2026-11-04 11:00"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1011",
+    "company": "Lumen Labs Skincare",
+    "email_domain": "lumenlabs.example",
+    "terms": "Net 30",
+    "contact_email": "buyer@lumenlabs.example"
+  },
+  "received_date": "2026-11-04",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": {
+    "text": "by Nov 15",
+    "date": "2026-11-15"
+  },
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "5 x 1 gal frankincense serrata",
+      "product_text": "frankincense serrata",
+      "product": "Frankincense Serrata Essential Oil",
+      "pack_size": "1 gal",
+      "pack_size_text": "1 gal",
+      "quantity": 5,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "EO-FRS-1GAL",
+      "unit_price": 385.7,
+      "amount": 1928.5,
+      "match_confidence": 0.97,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-FRS-1GAL"
+      ],
+      "flags": [
+        {
+          "code": "STOCK_INSUFFICIENT",
+          "severity": "warning",
+          "detail": "requested 5, available 2",
+          "source": "code"
+        }
+      ],
+      "candidate_products": [
+        "Frankincense Serrata Essential Oil"
+      ],
+      "item_name": "Frankincense Serrata Essential Oil 1 gal",
+      "price_tier_min_qty": 5,
+      "available_qty": 2
+    }
+  ],
+  "order_total": 1928.5,
+  "flags": [
+    {
+      "code": "NEEDED_BY_NON_BUSINESS_DAY",
+      "severity": "info",
+      "detail": "2026-11-15 is a Sunday",
+      "source": "code"
+    }
+  ],
+  "summary_for_rep": "Customer requests 5 x 1 gal Frankincense Serrata essential oil needed by Nov 15; no ship-to stated.",
+  "referenced_documents": [],
+  "idempotency_key": "739613d0d1b8ba4ba4a693a80320b7822c79383b13893753b27e9a73c540f641",
+  "rep_context": {
+    "other_open_drafts": [
+      [
+        "DQ-2026-00004",
+        "0.00"
+      ],
+      [
+        "DQ-2026-00011",
+        "0.00"
+      ],
+      [
+        "DQ-2026-00017",
+        "848.40"
+      ]
+    ]
+  },
+  "netsuite_estimate": {
+    "externalId": "739613d0d1b8ba4ba4a693a80320b7822c79383b13893753b27e9a73c540f641",
+    "entity": {
+      "externalId": "C1011"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S22: Frankincense serrata",
+    "custbody_ai_review_state": "ready_for_review",
+    "custbody_ai_flags": [
+      "NEEDED_BY_NON_BUSINESS_DAY"
+    ],
+    "custbody_needed_by": "2026-11-15",
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "EO-FRS-1GAL"
+          },
+          "quantity": 5,
+          "rate": 385.7,
+          "amount": 1928.5,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": [
+            "STOCK_INSUFFICIENT"
+          ]
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00020"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:22:56+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 279,
+      "output_tokens": 539,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.007777,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "Frankincense serrata",
+      "body": "We need 5 x 1 gal frankincense serrata by Nov 15. [NAME]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.85,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "5 x 1 gal frankincense serrata",
+          "product_text": "frankincense serrata",
+          "catalog_product": "Frankincense Serrata Essential Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.97,
+          "quantity": 5,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "1 gal",
+          "pack_size_text": "1 gal",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": {
+        "text": "by Nov 15",
+        "date": "2026-11-15",
+        "is_vague": false
+      },
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [],
+      "summary_for_rep": "Customer requests 5 x 1 gal Frankincense Serrata essential oil needed by Nov 15; no ship-to stated."
+    }
+  }
+}

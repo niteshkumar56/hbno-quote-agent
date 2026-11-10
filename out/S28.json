@@ -1,0 +1,294 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00025",
+  "status": "Draft - pending rep approval",
+  "review_state": "ready_for_review",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S28",
+    "sender": "purchasing@sunrisecoslab.example",
+    "subject": "Quarterly carrier oils",
+    "received_at": "2026-11-05 09:15"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1007",
+    "company": "Sunrise Cosmetics Lab",
+    "email_domain": "sunrisecoslab.example",
+    "terms": "Net 45",
+    "contact_email": "purchasing@sunrisecoslab.example"
+  },
+  "received_date": "2026-11-05",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": {
+    "text": "Irvine, CA",
+    "city": "Irvine",
+    "region": "CA",
+    "country": null
+  },
+  "needed_by": {
+    "text": "Dec 10",
+    "date": "2026-12-10"
+  },
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "Sweet almond 55 gal drum x 3",
+      "product_text": "Sweet almond",
+      "product": "Sweet Almond Oil",
+      "pack_size": "55 gal drum",
+      "pack_size_text": "55 gal drum",
+      "quantity": 3,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "CO-ALM-DRUM",
+      "unit_price": 990.0,
+      "amount": 2970.0,
+      "match_confidence": 0.97,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "CO-ALM-DRUM"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Sweet Almond Oil"
+      ],
+      "item_name": "Sweet Almond Oil 55 gal drum",
+      "price_tier_min_qty": 1,
+      "available_qty": 8
+    },
+    {
+      "line_no": 2,
+      "line_ref": 2,
+      "request_text": "Grapeseed 55 gal drum x 2",
+      "product_text": "Grapeseed",
+      "product": "Grapeseed Oil",
+      "pack_size": "55 gal drum",
+      "pack_size_text": "55 gal drum",
+      "quantity": 2,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "CO-GRP-DRUM",
+      "unit_price": 720.0,
+      "amount": 1440.0,
+      "match_confidence": 0.97,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "CO-GRP-DRUM"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Grapeseed Oil"
+      ],
+      "item_name": "Grapeseed Oil 55 gal drum",
+      "price_tier_min_qty": 1,
+      "available_qty": 8
+    },
+    {
+      "line_no": 3,
+      "line_ref": 3,
+      "request_text": "Castor 5 gal x 6",
+      "product_text": "Castor",
+      "product": "Castor Oil",
+      "pack_size": "5 gal",
+      "pack_size_text": "5 gal",
+      "quantity": 6,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "CO-CAS-5GAL",
+      "unit_price": 78.66,
+      "amount": 471.96,
+      "match_confidence": 0.97,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "CO-CAS-5GAL"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Castor Oil"
+      ],
+      "item_name": "Castor Oil 5 gal",
+      "price_tier_min_qty": 5,
+      "available_qty": 8
+    }
+  ],
+  "order_total": 4881.96,
+  "flags": [],
+  "summary_for_rep": "Customer requests a quote for 3 drums sweet almond, 2 drums grapeseed and 6 x 5 gal castor oil, shipping to Irvine, CA by Dec 10.",
+  "referenced_documents": [],
+  "idempotency_key": "14c61978d95f958676d8272c9b308e689727cd7b6c75d012ea9a60170e19ebc1",
+  "rep_context": {
+    "other_open_drafts": [
+      [
+        "DQ-2026-00007",
+        "7781.20"
+      ],
+      [
+        "DQ-2026-00016",
+        "4320.00"
+      ]
+    ]
+  },
+  "netsuite_estimate": {
+    "externalId": "14c61978d95f958676d8272c9b308e689727cd7b6c75d012ea9a60170e19ebc1",
+    "entity": {
+      "externalId": "C1007"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S28: Quarterly carrier oils",
+    "custbody_ai_review_state": "ready_for_review",
+    "custbody_ai_flags": [],
+    "custbody_needed_by": "2026-12-10",
+    "shipAddress": "Irvine, CA",
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "CO-ALM-DRUM"
+          },
+          "quantity": 3,
+          "rate": 990.0,
+          "amount": 2970.0,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        },
+        {
+          "item": {
+            "externalId": "CO-GRP-DRUM"
+          },
+          "quantity": 2,
+          "rate": 720.0,
+          "amount": 1440.0,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        },
+        {
+          "item": {
+            "externalId": "CO-CAS-5GAL"
+          },
+          "quantity": 6,
+          "rate": 78.66,
+          "amount": 471.96,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00025"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:23:20+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 332,
+      "output_tokens": 887,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.011363,
+    "redactions_before_model": {},
+    "sent_to_model": {
+      "subject": "Quarterly carrier oils",
+      "body": "Quote please:\nSweet almond 55 gal drum x 3\nGrapeseed 55 gal drum x 2\nCastor 5 gal x 6\nNeed by Dec 10, ship to Irvine, CA.",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.97,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "Sweet almond 55 gal drum x 3",
+          "product_text": "Sweet almond",
+          "catalog_product": "Sweet Almond Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.97,
+          "quantity": 3,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "55 gal drum",
+          "pack_size_text": "55 gal drum",
+          "is_sample": false,
+          "ship_to_text": null
+        },
+        {
+          "line_ref": 2,
+          "source_text": "Grapeseed 55 gal drum x 2",
+          "product_text": "Grapeseed",
+          "catalog_product": "Grapeseed Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.97,
+          "quantity": 2,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "55 gal drum",
+          "pack_size_text": "55 gal drum",
+          "is_sample": false,
+          "ship_to_text": null
+        },
+        {
+          "line_ref": 3,
+          "source_text": "Castor 5 gal x 6",
+          "product_text": "Castor",
+          "catalog_product": "Castor Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.97,
+          "quantity": 6,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "5 gal",
+          "pack_size_text": "5 gal",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": {
+        "text": "Irvine, CA",
+        "city": "Irvine",
+        "region": "CA",
+        "country": null
+      },
+      "needed_by": {
+        "text": "Dec 10",
+        "date": "2026-12-10",
+        "is_vague": false
+      },
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [],
+      "summary_for_rep": "Customer requests a quote for 3 drums sweet almond, 2 drums grapeseed and 6 x 5 gal castor oil, shipping to Irvine, CA by Dec 10."
+    }
+  }
+}

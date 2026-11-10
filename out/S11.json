@@ -1,0 +1,176 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00010",
+  "status": "Draft - pending rep approval",
+  "review_state": "needs_rep_action",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S11",
+    "sender": "anna@bloombath.example",
+    "subject": "Lavandin?",
+    "received_at": "2026-11-03 09:10"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1001",
+    "company": "Bloom & Bath Co",
+    "email_domain": "bloombath.example",
+    "terms": "Net 30",
+    "contact_email": "anna@bloombath.example"
+  },
+  "received_date": "2026-11-03",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "quote 5 x 1 gal",
+      "product_text": "lavandin grosso",
+      "product": null,
+      "pack_size": "1 gal",
+      "pack_size_text": "1 gal",
+      "quantity": 5,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": null,
+      "unit_price": null,
+      "amount": null,
+      "match_confidence": 0.0,
+      "match_status": "no_match",
+      "match_reason": "no catalog product matches",
+      "candidate_skus": [],
+      "flags": [
+        {
+          "code": "SKU_NO_MATCH",
+          "severity": "blocker",
+          "detail": "'lavandin grosso' is not in the catalog. no catalog product matches",
+          "source": "code"
+        }
+      ],
+      "candidate_products": []
+    }
+  ],
+  "order_total": 0.0,
+  "flags": [
+    {
+      "code": "CONDITIONAL_REQUEST",
+      "severity": "info",
+      "detail": "Quote requested only if HBNO carries lavandin grosso; it is not in the catalog (lavandin is not lavender).",
+      "source": "llm"
+    }
+  ],
+  "summary_for_rep": "Customer asks whether HBNO carries lavandin grosso and, if so, wants a quote for 5 x 1 gal; no ship-to or date given.",
+  "referenced_documents": [],
+  "idempotency_key": "37fec36553628cac9deb619b7cab790d95c741562261e547a00ed46caff188e5",
+  "rep_context": {
+    "other_open_drafts": [
+      [
+        "DQ-2026-00001",
+        "2394.00"
+      ]
+    ]
+  },
+  "netsuite_estimate": {
+    "externalId": "37fec36553628cac9deb619b7cab790d95c741562261e547a00ed46caff188e5",
+    "entity": {
+      "externalId": "C1001"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S11: Lavandin?",
+    "custbody_ai_review_state": "needs_rep_action",
+    "custbody_ai_flags": [
+      "CONDITIONAL_REQUEST"
+    ],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "AI-UNRESOLVED-LINE"
+          },
+          "description": "UNPRICED - needs rep: quote 5 x 1 gal",
+          "custcol_ai_flags": [
+            "SKU_NO_MATCH"
+          ]
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00010"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:22:14+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 294,
+      "output_tokens": 565,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.008067,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "Lavandin?",
+      "body": "Hi again, do you carry lavandin grosso? If so quote 5 x 1 gal. Thanks, [NAME]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.9,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "quote 5 x 1 gal",
+          "product_text": "lavandin grosso",
+          "catalog_product": null,
+          "catalog_candidates": [],
+          "product_confidence": 0.1,
+          "quantity": 5,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "1 gal",
+          "pack_size_text": "1 gal",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [
+        {
+          "code": "CONDITIONAL_REQUEST",
+          "detail": "Quote requested only if HBNO carries lavandin grosso; it is not in the catalog (lavandin is not lavender)."
+        }
+      ],
+      "summary_for_rep": "Customer asks whether HBNO carries lavandin grosso and, if so, wants a quote for 5 x 1 gal; no ship-to or date given."
+    }
+  }
+}

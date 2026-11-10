@@ -1,0 +1,193 @@
+{
+  "record_type": "triage",
+  "quote_number": null,
+  "status": "Triage - not a quote",
+  "review_state": "needs_rep_action",
+  "route_to": "Sales rep: sample program",
+  "intent": "sample_request",
+  "source": {
+    "email_id": "S21",
+    "sender": "anna@bloombath.example",
+    "subject": "Samples please",
+    "received_at": "2026-11-04 10:30"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1001",
+    "company": "Bloom & Bath Co",
+    "email_domain": "bloombath.example",
+    "terms": "Net 30",
+    "contact_email": "anna@bloombath.example"
+  },
+  "received_date": "2026-11-04",
+  "quote_date": "2026-11-11",
+  "expiry_date": null,
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "2 oz samples of your Bulgarian lavender",
+      "product_text": "Bulgarian lavender",
+      "product": "Lavender Essential Oil Bulgarian",
+      "pack_size": null,
+      "pack_size_text": "2 oz",
+      "quantity": null,
+      "quantity_unit": "unknown",
+      "ship_to_text": null,
+      "sku": null,
+      "unit_price": null,
+      "amount": null,
+      "match_confidence": 0.97,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-LAVBG-4OZ",
+        "EO-LAVBG-16OZ",
+        "EO-LAVBG-1GAL",
+        "EO-LAVBG-5GAL"
+      ],
+      "flags": [
+        {
+          "code": "PACK_SIZE_UNAVAILABLE",
+          "severity": "blocker",
+          "detail": "'2 oz' is not a pack size we sell",
+          "source": "code"
+        }
+      ],
+      "candidate_products": [
+        "Lavender Essential Oil Bulgarian"
+      ]
+    },
+    {
+      "line_no": 2,
+      "line_ref": 2,
+      "request_text": "2 oz samples of your Bulgarian lavender and lemon",
+      "product_text": "lemon",
+      "product": "Lemon Essential Oil",
+      "pack_size": null,
+      "pack_size_text": "2 oz",
+      "quantity": null,
+      "quantity_unit": "unknown",
+      "ship_to_text": null,
+      "sku": null,
+      "unit_price": null,
+      "amount": null,
+      "match_confidence": 0.97,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-LEM-4OZ",
+        "EO-LEM-16OZ",
+        "EO-LEM-1GAL",
+        "EO-LEM-5GAL"
+      ],
+      "flags": [
+        {
+          "code": "PACK_SIZE_UNAVAILABLE",
+          "severity": "blocker",
+          "detail": "'2 oz' is not a pack size we sell",
+          "source": "code"
+        }
+      ],
+      "candidate_products": [
+        "Lemon Essential Oil"
+      ]
+    }
+  ],
+  "order_total": null,
+  "flags": [
+    {
+      "code": "SAMPLE_REQUEST",
+      "severity": "blocker",
+      "detail": "intent: sample_request",
+      "source": "llm"
+    },
+    {
+      "code": "CLARIFICATION_NEEDED",
+      "severity": "warning",
+      "detail": "Number of 2 oz samples per product not stated (quantity left null); 2 oz is not a standard pack size. No ship-to given.",
+      "source": "llm"
+    }
+  ],
+  "summary_for_rep": "Customer requests 2 oz samples of Bulgarian lavender and lemon essential oils for testing; sample count and ship-to not stated.",
+  "referenced_documents": [],
+  "idempotency_key": "7c1d2103790ca35564329b0be949f83c758e947312006a815b5df6e517e288cb",
+  "rep_context": {
+    "other_open_drafts": []
+  },
+  "netsuite_estimate": null,
+  "audit": {
+    "processed_at": "2026-11-10T19:22:52+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 289,
+      "output_tokens": 742,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.009827,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "Samples please",
+      "body": "Could you send us 2 oz samples of your Bulgarian lavender and lemon so we can test them? [NAME]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "sample_request",
+      "intent_confidence": 0.97,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "2 oz samples of your Bulgarian lavender",
+          "product_text": "Bulgarian lavender",
+          "catalog_product": "Lavender Essential Oil Bulgarian",
+          "catalog_candidates": [],
+          "product_confidence": 0.97,
+          "quantity": null,
+          "quantity_is_approximate": false,
+          "quantity_unit": "unknown",
+          "pack_size": null,
+          "pack_size_text": "2 oz",
+          "is_sample": true,
+          "ship_to_text": null
+        },
+        {
+          "line_ref": 2,
+          "source_text": "2 oz samples of your Bulgarian lavender and lemon",
+          "product_text": "lemon",
+          "catalog_product": "Lemon Essential Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.97,
+          "quantity": null,
+          "quantity_is_approximate": false,
+          "quantity_unit": "unknown",
+          "pack_size": null,
+          "pack_size_text": "2 oz",
+          "is_sample": true,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [
+        {
+          "code": "AMBIGUOUS_REQUEST",
+          "detail": "Number of 2 oz samples per product not stated (quantity left null); 2 oz is not a standard pack size. No ship-to given."
+        }
+      ],
+      "summary_for_rep": "Customer requests 2 oz samples of Bulgarian lavender and lemon essential oils for testing; sample count and ship-to not stated."
+    }
+  }
+}

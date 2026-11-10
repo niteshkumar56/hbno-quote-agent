@@ -1,0 +1,199 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00008",
+  "status": "Draft - pending rep approval",
+  "review_state": "ready_for_review",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S09",
+    "sender": "sam@pureleafsoaps.example",
+    "subject": "Lemon pricing",
+    "received_at": "2026-11-03 08:05"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1002",
+    "company": "Pure Leaf Soaps",
+    "email_domain": "pureleafsoaps.example",
+    "terms": "Net 30",
+    "contact_email": "sam@pureleafsoaps.example"
+  },
+  "received_date": "2026-11-03",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "10 x 1 gal lemon",
+      "product_text": "lemon",
+      "product": "Lemon Essential Oil",
+      "pack_size": "1 gal",
+      "pack_size_text": "1 gal",
+      "quantity": 10,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "EO-LEM-1GAL",
+      "unit_price": 163.8,
+      "amount": 1638.0,
+      "match_confidence": 0.97,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-LEM-1GAL"
+      ],
+      "flags": [
+        {
+          "code": "CUSTOMER_PRICE_BELOW_FLOOR",
+          "severity": "warning",
+          "detail": "customer asked 120.00/unit (Our budget is $120 per gallon, can you do that?); floor is 145.60; table price 163.80 kept",
+          "source": "code"
+        }
+      ],
+      "candidate_products": [
+        "Lemon Essential Oil"
+      ],
+      "item_name": "Lemon Essential Oil 1 gal",
+      "price_tier_min_qty": 10,
+      "available_qty": 25,
+      "customer_target_price": 120.0
+    }
+  ],
+  "order_total": 1638.0,
+  "flags": [
+    {
+      "code": "DISCOUNT_REQUEST",
+      "severity": "warning",
+      "detail": "Customer states a budget of $120 per gallon and asks if HBNO can meet it. | Our budget is $120 per gallon, can you do that?",
+      "source": "llm"
+    },
+    {
+      "code": "CREDIT_LIMIT_EXCEEDED",
+      "severity": "warning",
+      "detail": "open balance 18500.00 + this quote 1638.00 = 20138.00 > limit 20000.00 (over by 138.00)",
+      "source": "code"
+    }
+  ],
+  "summary_for_rep": "Customer requests a quote for 10 x 1 gal lemon essential oil and asks whether HBNO can meet their stated per-gallon budget.",
+  "referenced_documents": [],
+  "idempotency_key": "ca7b2542b3c76cff8e7cff4fa9a5019e29ed1149ad90f1f03d0355986b70414d",
+  "rep_context": {
+    "other_open_drafts": []
+  },
+  "netsuite_estimate": {
+    "externalId": "ca7b2542b3c76cff8e7cff4fa9a5019e29ed1149ad90f1f03d0355986b70414d",
+    "entity": {
+      "externalId": "C1002"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S09: Lemon pricing",
+    "custbody_ai_review_state": "ready_for_review",
+    "custbody_ai_flags": [
+      "DISCOUNT_REQUEST",
+      "CREDIT_LIMIT_EXCEEDED"
+    ],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "EO-LEM-1GAL"
+          },
+          "quantity": 10,
+          "rate": 163.8,
+          "amount": 1638.0,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": [
+            "CUSTOMER_PRICE_BELOW_FLOOR"
+          ]
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00008"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:22:07+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 319,
+      "output_tokens": 615,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.008617,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "Lemon pricing",
+      "body": "Hi, we'd like 10 x 1 gal lemon. Our budget is $120 per gallon, can you do that?\n[NAME], Pure Leaf Soaps",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.95,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "10 x 1 gal lemon",
+          "product_text": "lemon",
+          "catalog_product": "Lemon Essential Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.97,
+          "quantity": 10,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "1 gal",
+          "pack_size_text": "1 gal",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [
+        {
+          "line_ref": 1,
+          "kind": "target_price",
+          "amount": 120,
+          "per": "gal",
+          "text": "Our budget is $120 per gallon, can you do that?"
+        }
+      ],
+      "referenced_documents": [],
+      "rep_attention": [
+        {
+          "code": "DISCOUNT_OR_TERMS_REQUEST",
+          "detail": "Customer states a budget of $120 per gallon and asks if HBNO can meet it."
+        }
+      ],
+      "summary_for_rep": "Customer requests a quote for 10 x 1 gal lemon essential oil and asks whether HBNO can meet their stated per-gallon budget."
+    }
+  }
+}

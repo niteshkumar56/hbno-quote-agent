@@ -1,0 +1,34 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00021 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Northwind Candle Works (C1003)
+Summary: Customer requests a quote for 3 x 1 gal lemon plus 2 more 1 gal lemon for a second warehouse; no destinations or dates given.
+  [WARNING] MULTIPLE_SHIP_TO: Second line (2 gal lemon) goes to 'the second warehouse'; no locations given for either destination. | line 2: the second warehouse
+  [INFO   ] TIER_CONSOLIDATION_POSSIBLE: EO-LEM-1GAL: 5 combined at 172.90 = 864.50 vs 910.00 priced per line (saves 45.50)
+  [INFO   ] other open draft for this customer: DQ-2026-00002 ($3,944.00)
+  [INFO   ] other open draft for this customer: DQ-2026-00013 ($2,048.00)
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: orders@northwindcandle.example
+Subject: HBNO quote DQ-2026-00021 - Re: Lemon x2 lines
+
+Hello Northwind Candle Works team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+EO-LEM-1GAL Lemon Essential Oil 1 gal           3      $182.00      $546.00
+EO-LEM-1GAL Lemon Essential Oil 1 gal           2      $182.00      $364.00
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                  $910.00
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 30.
+
+Best regards,
+HBNO Sales

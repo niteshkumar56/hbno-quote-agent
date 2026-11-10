@@ -1,0 +1,25 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: (triage, no quote) | Status: Triage - not a quote | Review: needs_rep_action
+Customer: Bloom & Bath Co (C1001)
+Route to: Sales rep: sample program
+Summary: Customer requests 2 oz samples of Bulgarian lavender and lemon essential oils for testing; sample count and ship-to not stated.
+  [BLOCKER] SAMPLE_REQUEST: intent: sample_request
+  [BLOCKER] PACK_SIZE_UNAVAILABLE: line 1: '2 oz' is not a pack size we sell
+  [BLOCKER] PACK_SIZE_UNAVAILABLE: line 2: '2 oz' is not a pack size we sell
+  [WARNING] CLARIFICATION_NEEDED: Number of 2 oz samples per product not stated (quantity left null); 2 oz is not a standard pack size. No ship-to given.
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+SUGGESTED ACKNOWLEDGEMENT (edit before sending)
+========================================================================
+To: anna@bloombath.example
+Subject: Re: Samples please
+
+Hello,
+
+Thank you for your message. We've passed it to the right person on our team and will get back to you shortly.
+
+Best regards,
+HBNO Sales

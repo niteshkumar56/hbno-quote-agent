@@ -1,0 +1,168 @@
+{
+  "summary": {
+    "emails": 30,
+    "fully_correct": 29,
+    "intent_accuracy": 1.0,
+    "create_quote_accuracy": 1.0,
+    "customer_accuracy": 1.0,
+    "priced_line_accuracy": 1.0,
+    "order_total_accuracy": 1.0,
+    "flag_recall_blocker_warning": 1.0,
+    "flag_precision_blocker_warning": 0.97,
+    "flag_recall_info": 1.0,
+    "critical_errors": 0,
+    "missing_outputs": 0
+  },
+  "per_email": [
+    [
+      "S01",
+      "OK",
+      ""
+    ],
+    [
+      "S02",
+      "OK",
+      ""
+    ],
+    [
+      "S03",
+      "OK",
+      ""
+    ],
+    [
+      "S04",
+      "OK",
+      ""
+    ],
+    [
+      "S05",
+      "OK",
+      ""
+    ],
+    [
+      "S06",
+      "OK",
+      ""
+    ],
+    [
+      "S07",
+      "OK",
+      ""
+    ],
+    [
+      "S08",
+      "OK",
+      ""
+    ],
+    [
+      "S09",
+      "OK",
+      ""
+    ],
+    [
+      "S10",
+      "OK",
+      ""
+    ],
+    [
+      "S11",
+      "OK",
+      ""
+    ],
+    [
+      "S12",
+      "OK",
+      ""
+    ],
+    [
+      "S13",
+      "OK",
+      ""
+    ],
+    [
+      "S14",
+      "OK",
+      ""
+    ],
+    [
+      "S15",
+      "OK",
+      ""
+    ],
+    [
+      "S16",
+      "OK",
+      ""
+    ],
+    [
+      "S17",
+      "OK",
+      ""
+    ],
+    [
+      "S18",
+      "OK",
+      ""
+    ],
+    [
+      "S19",
+      "OK",
+      ""
+    ],
+    [
+      "S20",
+      "OK",
+      ""
+    ],
+    [
+      "S21",
+      "OK",
+      ""
+    ],
+    [
+      "S22",
+      "OK",
+      ""
+    ],
+    [
+      "S23",
+      "OK",
+      ""
+    ],
+    [
+      "S24",
+      "OK",
+      ""
+    ],
+    [
+      "S25",
+      "OK",
+      ""
+    ],
+    [
+      "S26",
+      "OK",
+      ""
+    ],
+    [
+      "S27",
+      "OK",
+      ""
+    ],
+    [
+      "S28",
+      "OK",
+      ""
+    ],
+    [
+      "S29",
+      "OK",
+      ""
+    ],
+    [
+      "S30",
+      "PARTIAL",
+      "extra flags ['DISCOUNT_REQUEST']"
+    ]
+  ]
+}

@@ -1,0 +1,26 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00010 | Status: Draft - pending rep approval | Review: needs_rep_action
+Customer: Bloom & Bath Co (C1001)
+Summary: Customer asks whether HBNO carries lavandin grosso and, if so, wants a quote for 5 x 1 gal; no ship-to or date given.
+  [BLOCKER] SKU_NO_MATCH: line 1: 'lavandin grosso' is not in the catalog. no catalog product matches
+  [INFO   ] CONDITIONAL_REQUEST: Quote requested only if HBNO carries lavandin grosso; it is not in the catalog (lavandin is not lavender).
+  [INFO   ] other open draft for this customer: DQ-2026-00001 ($2,394.00)
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: anna@bloombath.example
+Subject: HBNO quote DQ-2026-00010 - Re: Lavandin?
+
+Hello Bloom & Bath Co team,
+
+Thank you for your request. Before we can price your request we need a few details.
+
+A few questions so we can complete your quote:
+  1. We don't currently list "lavandin grosso". Would an alternative from our range work? Your rep can suggest options.
+
+Best regards,
+HBNO Sales

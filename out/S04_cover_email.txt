@@ -1,0 +1,24 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00004 | Status: Draft - pending rep approval | Review: needs_rep_action
+Customer: Lumen Labs Skincare (C1011)
+Summary: Customer requests a quote for 20 lbs of tea tree oil, with no pack size, ship-to or needed-by date given.
+  [BLOCKER] UNIT_NOT_SELLABLE: line 1: requested 20 lb; sold only as a count of 4 oz / 16 oz / 1 gal / 5 gal / drum packs
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: buyer@lumenlabs.example
+Subject: HBNO quote DQ-2026-00004 - Re: Tea tree 20 lbs
+
+Hello Lumen Labs Skincare team,
+
+Thank you for your request. Before we can price your request we need a few details.
+
+A few questions so we can complete your quote:
+  1. You asked for 20 lb of tea tree oil. We sell in 4 oz, 16 oz, 1 gal, 5 gal and 55 gal drum containers. Which container sizes and how many would you like?
+
+Best regards,
+HBNO Sales

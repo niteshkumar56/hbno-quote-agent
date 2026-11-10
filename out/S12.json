@@ -1,0 +1,167 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00011",
+  "status": "Draft - pending rep approval",
+  "review_state": "needs_rep_action",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S12",
+    "sender": "buyer@lumenlabs.example",
+    "subject": "Frankincense carterii",
+    "received_at": "2026-11-03 10:00"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1011",
+    "company": "Lumen Labs Skincare",
+    "email_domain": "lumenlabs.example",
+    "terms": "Net 30",
+    "contact_email": "buyer@lumenlabs.example"
+  },
+  "received_date": "2026-11-03",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "3 x 16 oz frankincense carterii",
+      "product_text": "frankincense carterii",
+      "product": "Frankincense Carterii Essential Oil",
+      "pack_size": "16 oz",
+      "pack_size_text": "16 oz",
+      "quantity": 3,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "EO-FRC-16OZ",
+      "unit_price": null,
+      "amount": null,
+      "match_confidence": 0.98,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-FRC-16OZ"
+      ],
+      "flags": [
+        {
+          "code": "SKU_INACTIVE",
+          "severity": "blocker",
+          "detail": "EO-FRC-16OZ is inactive; not quoted. Rep may offer an alternative manually",
+          "source": "code"
+        }
+      ],
+      "candidate_products": [
+        "Frankincense Carterii Essential Oil"
+      ],
+      "item_name": "Frankincense Carterii Essential Oil 16 oz"
+    }
+  ],
+  "order_total": 0.0,
+  "flags": [],
+  "summary_for_rep": "Customer asks for a quote on 3 x 16 oz Frankincense Carterii essential oil; no ship-to or needed-by date given.",
+  "referenced_documents": [],
+  "idempotency_key": "351f9de5cda2842f42a91cab48c1598af389f31ad994e8f4532fb74afc5cd0f8",
+  "rep_context": {
+    "other_open_drafts": [
+      [
+        "DQ-2026-00004",
+        "0.00"
+      ]
+    ]
+  },
+  "netsuite_estimate": {
+    "externalId": "351f9de5cda2842f42a91cab48c1598af389f31ad994e8f4532fb74afc5cd0f8",
+    "entity": {
+      "externalId": "C1011"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S12: Frankincense carterii",
+    "custbody_ai_review_state": "needs_rep_action",
+    "custbody_ai_flags": [],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "AI-UNRESOLVED-LINE"
+          },
+          "description": "UNPRICED - needs rep: 3 x 16 oz frankincense carterii",
+          "custcol_ai_flags": [
+            "SKU_INACTIVE"
+          ]
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00011"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:22:17+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 284,
+      "output_tokens": 513,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.007527,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "Frankincense carterii",
+      "body": "Can we get 3 x 16 oz frankincense carterii? [NAME]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.9,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "3 x 16 oz frankincense carterii",
+          "product_text": "frankincense carterii",
+          "catalog_product": "Frankincense Carterii Essential Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.98,
+          "quantity": 3,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "16 oz",
+          "pack_size_text": "16 oz",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [],
+      "summary_for_rep": "Customer asks for a quote on 3 x 16 oz Frankincense Carterii essential oil; no ship-to or needed-by date given."
+    }
+  }
+}

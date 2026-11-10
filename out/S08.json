@@ -1,0 +1,95 @@
+{
+  "record_type": "triage",
+  "quote_number": null,
+  "status": "Triage - not a quote",
+  "review_state": "needs_rep_action",
+  "route_to": "Sales rep: pull customer's order history",
+  "intent": "reorder_by_reference",
+  "source": {
+    "email_id": "S08",
+    "sender": "mike@mapleridgegoods.example",
+    "subject": "Re: last order",
+    "received_at": "2026-11-02 15:45"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1008",
+    "company": "Maple Ridge Goods",
+    "email_domain": "mapleridgegoods.example",
+    "terms": "Net 30",
+    "contact_email": "mike@mapleridgegoods.example"
+  },
+  "received_date": "2026-11-02",
+  "quote_date": "2026-11-11",
+  "expiry_date": null,
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [],
+  "order_total": null,
+  "flags": [
+    {
+      "code": "NEEDS_ORDER_HISTORY",
+      "severity": "blocker",
+      "detail": "intent: reorder_by_reference | Customer says 'Same as last time but double it'; no order number or products given, so contents of the previous order are unknown.",
+      "source": "llm"
+    },
+    {
+      "code": "CLARIFICATION_NEEDED",
+      "severity": "warning",
+      "detail": "Products, pack sizes and quantities are not stated; 'double it' depends on the unseen prior order. Rep must identify the order and confirm.",
+      "source": "llm"
+    }
+  ],
+  "summary_for_rep": "Customer asks to repeat their last order with doubled quantities, without naming products, quantities or an order number.",
+  "referenced_documents": [],
+  "idempotency_key": "958b6d82152e4882b8788dea75e0b3fdac60eccf2cf24377318167f5d75fba72",
+  "rep_context": {
+    "other_open_drafts": []
+  },
+  "netsuite_estimate": null,
+  "audit": {
+    "processed_at": "2026-11-10T19:22:03+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 273,
+      "output_tokens": 480,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.007175,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "Re: last order",
+      "body": "Same as last time but double it please. [NAME]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "reorder_by_reference",
+      "intent_confidence": 0.9,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [
+        {
+          "code": "REFERENCES_PRIOR_ORDER",
+          "detail": "Customer says 'Same as last time but double it'; no order number or products given, so contents of the previous order are unknown."
+        },
+        {
+          "code": "AMBIGUOUS_REQUEST",
+          "detail": "Products, pack sizes and quantities are not stated; 'double it' depends on the unseen prior order. Rep must identify the order and confirm."
+        }
+      ],
+      "summary_for_rep": "Customer asks to repeat their last order with doubled quantities, without naming products, quantities or an order number."
+    }
+  }
+}

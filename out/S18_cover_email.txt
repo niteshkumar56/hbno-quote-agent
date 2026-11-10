@@ -1,0 +1,32 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00017 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Lumen Labs Skincare (C1011)
+Summary: Customer requests a quote for 6 x 5 gal fractionated coconut oil and 10 x 16 oz eucalyptus radiata; no ship-to or date given.
+  [INFO   ] other open draft for this customer: DQ-2026-00004 ($0.00)
+  [INFO   ] other open draft for this customer: DQ-2026-00011 ($0.00)
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: buyer@lumenlabs.example
+Subject: HBNO quote DQ-2026-00017 - Re: FCO + euc rad
+
+Hello Lumen Labs Skincare team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+CO-FCO-5GAL Fractionated Coconut Oil 5 gal      6       $87.40      $524.40
+EO-EUCR-16OZ Eucalyptus Radiata Essential O    10       $32.40      $324.00
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                  $848.40
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 30.
+
+Best regards,
+HBNO Sales

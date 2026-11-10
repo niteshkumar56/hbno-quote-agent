@@ -1,0 +1,32 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00007 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Sunrise Cosmetics Lab (C1007)
+Summary: Customer sent a draft PO (pasted in body) and requests a quote for FCO (2 x 55 gal), Lavender 40/42 (4 x 5 gal) and Rosemary (6 x 1 gal); no ship-to or date given.
+  [INFO   ] ATTACHMENT_REFERENCED: SCL-PO-DRAFT-1182.pdf
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: purchasing@sunrisecoslab.example
+Subject: HBNO quote DQ-2026-00007 - Re: PO draft attached - please quote
+
+Hello Sunrise Cosmetics Lab team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+CO-FCO-DRUM Fractionated Coconut Oil 55 gal     2      $900.00    $1,800.00
+EO-LAV4042-5GAL Lavender Essential Oil 40/4     4    $1,216.00    $4,864.00
+EO-ROS-1GAL Rosemary Essential Oil 1 gal        6      $186.20    $1,117.20
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                $7,781.20
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 45.
+
+Best regards,
+HBNO Sales

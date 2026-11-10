@@ -1,0 +1,201 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00027",
+  "status": "Draft - pending rep approval",
+  "review_state": "needs_rep_action",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S30",
+    "sender": "ops@kalamatanaturals.example",
+    "subject": "Eucalyptus",
+    "received_at": "2026-11-05 11:20"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1005",
+    "company": "Kalamata Naturals",
+    "email_domain": "kalamatanaturals.example",
+    "terms": "Prepaid",
+    "contact_email": "ops@kalamatanaturals.example"
+  },
+  "received_date": "2026-11-05",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "eucalyptus, 1 gallon x 3",
+      "product_text": "eucalyptus",
+      "product": null,
+      "pack_size": "1 gal",
+      "pack_size_text": "1 gallon",
+      "quantity": 3,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": null,
+      "unit_price": null,
+      "amount": null,
+      "match_confidence": 0.0,
+      "match_status": "ambiguous",
+      "match_reason": "ambiguous: request fits several products",
+      "candidate_skus": [
+        "EO-EUCG-1GAL",
+        "EO-EUCR-1GAL"
+      ],
+      "flags": [
+        {
+          "code": "SKU_AMBIGUOUS",
+          "severity": "blocker",
+          "detail": "'eucalyptus' could be: Eucalyptus Globulus Essential Oil, Eucalyptus Radiata Essential Oil",
+          "source": "code"
+        }
+      ],
+      "candidate_products": [
+        "Eucalyptus Globulus Essential Oil",
+        "Eucalyptus Radiata Essential Oil"
+      ]
+    }
+  ],
+  "order_total": 0.0,
+  "flags": [
+    {
+      "code": "CLARIFICATION_NEEDED",
+      "severity": "warning",
+      "detail": "Eucalyptus species not specified: could be Globulus or Radiata.",
+      "source": "llm"
+    },
+    {
+      "code": "DISCOUNT_REQUEST",
+      "severity": "warning",
+      "detail": "Customer says 'We prepay as usual' - refers to payment terms/prior arrangement; rep to verify.",
+      "source": "llm"
+    },
+    {
+      "code": "PREPAID_TERMS",
+      "severity": "info",
+      "detail": "prepaid account: no credit check; payment required before release",
+      "source": "code"
+    }
+  ],
+  "summary_for_rep": "Customer wants 3 x 1 gallon of eucalyptus (species not specified) and notes they prepay as usual; no ship-to or date given.",
+  "referenced_documents": [],
+  "idempotency_key": "f8fa34b33e6255a5962d68efd3677aa75e2575e806a7505846e086b1acf2a7ea",
+  "rep_context": {
+    "other_open_drafts": [
+      [
+        "DQ-2026-00009",
+        "4050.00"
+      ]
+    ]
+  },
+  "netsuite_estimate": {
+    "externalId": "f8fa34b33e6255a5962d68efd3677aa75e2575e806a7505846e086b1acf2a7ea",
+    "entity": {
+      "externalId": "C1005"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S30: Eucalyptus",
+    "custbody_ai_review_state": "needs_rep_action",
+    "custbody_ai_flags": [
+      "CLARIFICATION_NEEDED",
+      "DISCOUNT_REQUEST",
+      "PREPAID_TERMS"
+    ],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "AI-UNRESOLVED-LINE"
+          },
+          "description": "UNPRICED - needs rep: eucalyptus, 1 gallon x 3",
+          "custcol_ai_flags": [
+            "SKU_AMBIGUOUS"
+          ]
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00027"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:23:27+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 278,
+      "output_tokens": 656,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.008945,
+    "redactions_before_model": {},
+    "sent_to_model": {
+      "subject": "Eucalyptus",
+      "body": "Need eucalyptus, 1 gallon x 3. We prepay as usual.",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.8,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "eucalyptus, 1 gallon x 3",
+          "product_text": "eucalyptus",
+          "catalog_product": null,
+          "catalog_candidates": [
+            "Eucalyptus Globulus Essential Oil",
+            "Eucalyptus Radiata Essential Oil"
+          ],
+          "product_confidence": 0.4,
+          "quantity": 3,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "1 gal",
+          "pack_size_text": "1 gallon",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [
+        {
+          "code": "AMBIGUOUS_REQUEST",
+          "detail": "Eucalyptus species not specified: could be Globulus or Radiata."
+        },
+        {
+          "code": "DISCOUNT_OR_TERMS_REQUEST",
+          "detail": "Customer says 'We prepay as usual' - refers to payment terms/prior arrangement; rep to verify."
+        }
+      ],
+      "summary_for_rep": "Customer wants 3 x 1 gallon of eucalyptus (species not specified) and notes they prepay as usual; no ship-to or date given."
+    }
+  }
+}

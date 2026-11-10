@@ -1,0 +1,29 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00001 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Bloom & Bath Co (C1001)
+Summary: Customer requests a quote for 10 x 1 gallon Lavender 40/42; no ship-to or needed-by date given.
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: anna@bloombath.example
+Subject: HBNO quote DQ-2026-00001 - Re: Quote request - lavender
+
+Hello Bloom & Bath Co team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+EO-LAV4042-1GAL Lavender Essential Oil 40/4    10      $239.40    $2,394.00
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                $2,394.00
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 30.
+
+Best regards,
+HBNO Sales

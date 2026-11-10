@@ -1,0 +1,32 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00008 | Status: Draft - pending rep approval | Review: ready_for_review
+Customer: Pure Leaf Soaps (C1002)
+Summary: Customer requests a quote for 10 x 1 gal lemon essential oil and asks whether HBNO can meet their stated per-gallon budget.
+  [WARNING] DISCOUNT_REQUEST: Customer states a budget of $120 per gallon and asks if HBNO can meet it. | Our budget is $120 per gallon, can you do that?
+  [WARNING] CREDIT_LIMIT_EXCEEDED: open balance 18500.00 + this quote 1638.00 = 20138.00 > limit 20000.00 (over by 138.00)
+  [WARNING] CUSTOMER_PRICE_BELOW_FLOOR: line 1: customer asked 120.00/unit (Our budget is $120 per gallon, can you do that?); floor is 145.60; table price 163.80 kept
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: sam@pureleafsoaps.example
+Subject: HBNO quote DQ-2026-00008 - Re: Lemon pricing
+
+Hello Pure Leaf Soaps team,
+
+Thank you for your request. Please find our quote below.
+
+Item                                          Qty   Unit price       Amount
+---------------------------------------------------------------------------
+EO-LEM-1GAL Lemon Essential Oil 1 gal          10      $163.80    $1,638.00
+---------------------------------------------------------------------------
+Total (USD, excl. freight and tax)                                $1,638.00
+
+Quote valid until Nov 18, 2026.
+Payment terms: Net 30.
+
+Best regards,
+HBNO Sales

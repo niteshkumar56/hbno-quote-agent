@@ -1,0 +1,25 @@
+========================================================================
+REP NOTES - INTERNAL, DO NOT SEND
+========================================================================
+Record: DQ-2026-00023 | Status: Draft - pending rep approval | Review: needs_rep_action
+Customer: Tierra Botanica (C1012)
+Summary: Customer requests a quote for 25 kg of sweet almond oil, with no pack size, ship-to or needed-by date given.
+  [BLOCKER] UNIT_NOT_SELLABLE: line 1: requested 25 kg; sold only as a count of 4 oz / 16 oz / 1 gal / 5 gal / drum packs
+  [INFO   ] other open draft for this customer: DQ-2026-00012 ($219.20)
+Nothing has been sent. Review, edit and send manually.
+
+========================================================================
+DRAFT EMAIL TO CUSTOMER
+========================================================================
+To: compras@tierrabotanica.example
+Subject: HBNO quote DQ-2026-00023 - Re: Almond 25 kg
+
+Hello Tierra Botanica team,
+
+Thank you for your request. Before we can price your request we need a few details.
+
+A few questions so we can complete your quote:
+  1. You asked for 25 kg of sweet almond oil. We sell in 4 oz, 16 oz, 1 gal, 5 gal and 55 gal drum containers. Which container sizes and how many would you like?
+
+Best regards,
+HBNO Sales

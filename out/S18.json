@@ -1,0 +1,224 @@
+{
+  "record_type": "quote",
+  "quote_number": "DQ-2026-00017",
+  "status": "Draft - pending rep approval",
+  "review_state": "ready_for_review",
+  "route_to": null,
+  "intent": "quote_request",
+  "source": {
+    "email_id": "S18",
+    "sender": "buyer@lumenlabs.example",
+    "subject": "FCO + euc rad",
+    "received_at": "2026-11-03 15:10"
+  },
+  "customer": {
+    "type": "existing",
+    "customer_id": "C1011",
+    "company": "Lumen Labs Skincare",
+    "email_domain": "lumenlabs.example",
+    "terms": "Net 30",
+    "contact_email": "buyer@lumenlabs.example"
+  },
+  "received_date": "2026-11-03",
+  "quote_date": "2026-11-11",
+  "expiry_date": "2026-11-18",
+  "currency": "USD",
+  "ship_to": null,
+  "needed_by": null,
+  "lines": [
+    {
+      "line_no": 1,
+      "line_ref": 1,
+      "request_text": "FCO 5 gal x 6",
+      "product_text": "FCO",
+      "product": "Fractionated Coconut Oil",
+      "pack_size": "5 gal",
+      "pack_size_text": "5 gal",
+      "quantity": 6,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "CO-FCO-5GAL",
+      "unit_price": 87.4,
+      "amount": 524.4,
+      "match_confidence": 0.98,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "CO-FCO-5GAL"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Fractionated Coconut Oil"
+      ],
+      "item_name": "Fractionated Coconut Oil 5 gal",
+      "price_tier_min_qty": 5,
+      "available_qty": 8
+    },
+    {
+      "line_no": 2,
+      "line_ref": 2,
+      "request_text": "euc rad 16 oz x 10",
+      "product_text": "euc rad",
+      "product": "Eucalyptus Radiata Essential Oil",
+      "pack_size": "16 oz",
+      "pack_size_text": "16 oz",
+      "quantity": 10,
+      "quantity_unit": "container",
+      "ship_to_text": null,
+      "sku": "EO-EUCR-16OZ",
+      "unit_price": 32.4,
+      "amount": 324.0,
+      "match_confidence": 0.98,
+      "match_status": "matched",
+      "match_reason": "alias match",
+      "candidate_skus": [
+        "EO-EUCR-16OZ"
+      ],
+      "flags": [],
+      "candidate_products": [
+        "Eucalyptus Radiata Essential Oil"
+      ],
+      "item_name": "Eucalyptus Radiata Essential Oil 16 oz",
+      "price_tier_min_qty": 10,
+      "available_qty": 40
+    }
+  ],
+  "order_total": 848.4,
+  "flags": [],
+  "summary_for_rep": "Customer requests a quote for 6 x 5 gal fractionated coconut oil and 10 x 16 oz eucalyptus radiata; no ship-to or date given.",
+  "referenced_documents": [],
+  "idempotency_key": "529d035f72589f3cbbc5938b2527c48f8148f1919f9ea44e6b1533f86a531f72",
+  "rep_context": {
+    "other_open_drafts": [
+      [
+        "DQ-2026-00004",
+        "0.00"
+      ],
+      [
+        "DQ-2026-00011",
+        "0.00"
+      ]
+    ]
+  },
+  "netsuite_estimate": {
+    "externalId": "529d035f72589f3cbbc5938b2527c48f8148f1919f9ea44e6b1533f86a531f72",
+    "entity": {
+      "externalId": "C1011"
+    },
+    "prerequisites": [],
+    "subsidiary": {
+      "id": null
+    },
+    "location": {
+      "id": null
+    },
+    "currency": {
+      "refName": "USD"
+    },
+    "entityStatus": {
+      "id": null
+    },
+    "tranDate": "2026-11-11",
+    "dueDate": "2026-11-18",
+    "memo": "AI draft from email S18: FCO + euc rad",
+    "custbody_ai_review_state": "ready_for_review",
+    "custbody_ai_flags": [],
+    "custbody_needed_by": null,
+    "shipAddress": null,
+    "item": {
+      "items": [
+        {
+          "item": {
+            "externalId": "CO-FCO-5GAL"
+          },
+          "quantity": 6,
+          "rate": 87.4,
+          "amount": 524.4,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        },
+        {
+          "item": {
+            "externalId": "EO-EUCR-16OZ"
+          },
+          "quantity": 10,
+          "rate": 32.4,
+          "amount": 324.0,
+          "price": {
+            "id": "-1"
+          },
+          "custcol_ai_flags": []
+        }
+      ]
+    },
+    "tranId": "DQ-2026-00017"
+  },
+  "audit": {
+    "processed_at": "2026-11-10T19:22:40+00:00",
+    "extractor": "anthropic",
+    "model": "claude-sonnet-5-5",
+    "prompt_version": "16fd15f523c4",
+    "attempts": 1,
+    "usage": {
+      "input_tokens": 295,
+      "output_tokens": 668,
+      "cache_read_input_tokens": 9145,
+      "cache_creation_input_tokens": 0
+    },
+    "cost_usd": 0.009099,
+    "redactions_before_model": {
+      "name": 1
+    },
+    "sent_to_model": {
+      "subject": "FCO + euc rad",
+      "body": "Quote: FCO 5 gal x 6, euc rad 16 oz x 10. [NAME]",
+      "quoted": ""
+    },
+    "extraction": {
+      "intent": "quote_request",
+      "intent_confidence": 0.97,
+      "secondary_intents": [],
+      "language": "en",
+      "lines": [
+        {
+          "line_ref": 1,
+          "source_text": "FCO 5 gal x 6",
+          "product_text": "FCO",
+          "catalog_product": "Fractionated Coconut Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.98,
+          "quantity": 6,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "5 gal",
+          "pack_size_text": "5 gal",
+          "is_sample": false,
+          "ship_to_text": null
+        },
+        {
+          "line_ref": 2,
+          "source_text": "euc rad 16 oz x 10",
+          "product_text": "euc rad",
+          "catalog_product": "Eucalyptus Radiata Essential Oil",
+          "catalog_candidates": [],
+          "product_confidence": 0.98,
+          "quantity": 10,
+          "quantity_is_approximate": false,
+          "quantity_unit": "container",
+          "pack_size": "16 oz",
+          "pack_size_text": "16 oz",
+          "is_sample": false,
+          "ship_to_text": null
+        }
+      ],
+      "ship_to": null,
+      "needed_by": null,
+      "customer_price_requests": [],
+      "referenced_documents": [],
+      "rep_attention": [],
+      "summary_for_rep": "Customer requests a quote for 6 x 5 gal fractionated coconut oil and 10 x 16 oz eucalyptus radiata; no ship-to or date given."
+    }
+  }
+}
